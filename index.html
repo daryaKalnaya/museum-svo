@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="input.css">
     <title>Главная - Музей СВО</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <header class="fixed top-0 left-0 bg-white w-[100%] z-1 ">
@@ -32,7 +31,7 @@
                 </li>
                 <li class="relative group">
                     <div class="nav_link flex">
-                        <a href="#">Посетителям</a>
+                        <a href="#" >Посетителям</a>
                         <a href="#" class="vector pt-[11px] pl-[8px]">
                             <img src="image/Vector 13.png">
                         </a>
@@ -93,14 +92,16 @@
             </div>
         </div>
     </header>
-    <main class="bg-[#F0EEE1]">
+    <main class="bg-white">
         <div class="container-hero bg-[url(image/bg.png)] bg-cover bg-no-repeat h-[1230px] pt-[418px] pl-[162px]  translate-y-[80px]">
             <div class="hero-main bg-[#807552B2] pl-[32px] pt-[48px] pr-[17px] text-white">
                 <p class="hero-title">Музей СВО</p>
-                <p class="hero-text">
-                Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года. Задача — сохранить память о саратовцах-участниках СВО.<br>
-                Музей является филиалом саратовского Исторического парка «Россия — Моя история».
-                </p>
+                <div class="block_hero-text">
+                    <p class="hero-text">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p> 
+                    <p class="hero-text">Задача — сохранить память о саратовцах-участниках СВО.
+                    Музей является филиалом саратовского Исторического парка «Россия — Моя история».
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -108,10 +109,13 @@
             <div class=" text_container  pl-[162px] relative">
                 <div class="hero-main">
                     <p class="hero-title">Музей СВО</p>
-                    <p class="hero-text">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года. Задача — сохранить память о саратовцах-участниках СВО.<br>
-                    Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
+                    <div class="block_hero-text">
+                        <p class="hero-text">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
+                        <p class="hero-text">Задача — сохранить память о саратовцах-участниках СВО.</p>
+                        <p class="hero-text">Музей является филиалом саратовского Исторического<br> парка «Россия — Моя история».</p> 
+                    </div>
                 </div>                
-                <div class="image absolute left-[0px] top-[120px]">
+                <div class="image absolute left-[-5px] top-[100px]">
                     <img src="image/Group 191.png">
                 </div>
             </div>
@@ -119,12 +123,16 @@
                 <div class="block1 relative">
                     <a href="#" class="">
                         <img src="image/img1.png">
+                        <div class="text_block hidden">
+                            <p class="text_block-regular">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
+                            <p class="text_block-title">Выставки</p>
+                        </div>
                     </a>
                     <div class="arrow">
-                        <img src="image/Vector 15.png" class="absolute top-[30px] left-[10px]">
+                        <img src="image/Vector 15.png" class="absolute top-[25px] left-[10px]">
                     </div>
-                    <div class="vector1">
-                        <img src="image/Group 190.png" class="absolute top-[-57px] left-[-83px]" >
+                    <div class="vector1 ">
+                        <img src="image/Group 190.png" class="absolute top-[-57px] left-[-83px]">
                     </div>
                     <div class="vector2">
                         <img src="image/Group 189.png" class="absolute bottom-[-42px] right-[-38px]">
@@ -132,8 +140,12 @@
                 </div>
                 <div class="block2 relative">
                     <a href="#">
-                        <img src="image/img2.png">
+                        <img src="image/img2.png" class="">
                     </a>
+                    <div class="text_block hidden">
+                        <p class="text_block-title">О нас</p>
+                        <p class="text_block-regular">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
+                    </div>
                     <div class="vector3">
                         <img src="image/Group 188.png" class="absolute right-[-73px] bottom-[1px]">
                     </div>
@@ -145,8 +157,10 @@
                 <div class="container_top-title">
                     <p class="hero-title-line">Выставки</p>
                 </div>
-                <div class="container_top-text pt-[15px]">
-                    <p class="hero-text w-[950px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года. Задача — сохранить память о саратовцах-участниках СВО. Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
+                <div class="container_top-text pt-[25px]">
+                    <p class="hero-text w-[950px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.
+                    <p class="hero-text w-[950px]">Задача — сохранить память о саратовцах-участниках СВО.</p>
+                    <p class="hero-text w-[950px]">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
                 </div>
             </div>
             <div class="cards flex gap-[85px] pb-[94px]">
@@ -181,8 +195,52 @@
                     </div>
                 </div>
             </div>
-            <button class="button_1 bg-[#BCB679] font-[DinproRegular] text-[28px] w-[324px] h-[66px] ml-[622px]">смотреть все</button>
-            
+            <button class="button_1">смотреть все</button>
+        </div>
+        <div class="container_top pt-[108px] pr-[162px] pl-[162px]">
+            <div class="container_top-title flex flex-row gap-[47px] pb-[100px] relative">
+                <div class="">
+                    <p class="hero-text max-w-[912px] text-right pt-[15px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
+                    <p class="hero-text max-w-[912px] text-right">Задача — сохранить память о саратовцах-участниках СВО.</p>
+                    <p class="hero-text max-w-[912px] text-right">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
+                </div>
+                <p class="hero-title">Экскурсии</p>
+                <img src="image/Vector 17.png" class="absolute top-[95px] right-[-16px]">
+            </div>
+            <div class="cards flex gap-[85px] pb-[94px]">
+                <div class="excursion">
+                    <div class="excursion_img">
+                        <img src="image/img3.png" class="img_ex">
+                    </div>
+                    <div class="text_ex">
+                        <p class="excursion_text">Экскурсия 1</p>
+                        <p class="excursiom_text-mini">с 9.00 до 9.00</p>
+                        <p class="excursiom_text-mini">1 января — 1 января</p>
+                    </div>
+                </div>
+                <div class="excursion">
+                    <div class="excursion_img">
+                        <img src="image/img3.png" class="img_ex">
+                    </div>
+                    <div class="text_ex">
+                        <p class="excursion_text">Экскурсия 1</p>
+                        <p class="excursiom_text-mini">с 9.00 до 9.00</p>
+                        <p class="excursiom_text-mini">1 января — 1 января</p>
+                    </div>
+                </div>
+                <div class="excursion">
+                    <div class="excursion_img">
+                        <img src="image/img3.png" class="img_ex">
+                    </div>
+                    <div class="text_ex">
+                        <p class="excursion_text">Экскурсия 1</p>
+                        <p class="excursiom_text-mini">с 9.00 до 9.00</p>
+                        <p class="excursiom_text-mini">1 января — 1 января</p>
+                    </div>
+                </div>
+            </div>
+        <button class="button_1">смотреть все</button>
+        </div>    
     </main>
 </body>
 </html>
