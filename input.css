@@ -17,6 +17,9 @@
     src: url('fonts/dinpro_light.otf') format('woff2'),
          url('fonts/dinpro_light.otf') format('woff');
 }
+.nav_drop :last-child {
+    border:none;
+}
 .hero-title, .hero-title-line{
     font-family: "Conthrax";
     font-size: 88px;
@@ -25,18 +28,32 @@
 .hero-text{
     font-size: 28px;
     font-family: 'DinproRegular';
-    line-height: 1.3;
+    line-height: 1.2;
 }
-
-.nav_drop :last-child {
-    border:none;
+.hero-title1{
+    font-size: 80px;
+    font-family: 'Conthrax';
+    line-height: 100%;
 }
 
 .hero-main{
     display: flex;
     flex-direction: column;
-    gap: 40px;
     width: 837px;
+    height: 413px;
+}
+.hero-main2{
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    width: 811px;
+    height: 413px;
+}
+.hero-main3{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    min-width: 752px;
     height: 413px;
 }
 .nav_drop{
@@ -62,6 +79,20 @@
     top: 41px;
     border-image: linear-gradient(90deg, rgba(221, 216, 175, 1), white) 1;
 }
+.container-hero {
+    display: grid;
+    z-index: 0;
+    position: relative;
+    transform: translateY(99px);
+    background-position: center top; /* или конкретное значение, например: 50% 20% */
+}
+.hero-main{
+    display: grid;
+    z-index: 2;
+    position: relative;
+    transform: translateX(162px) translateY(375px);
+
+}
 .hero-title-line{
     border-bottom: 60px;
     border-style: solid;
@@ -79,20 +110,20 @@
 }
 .img_ex{
     width: 100%;
-    height: 100%;
+    height: 96%;
     object-fit: cover;
 }
 .excursion_img{
     min-height: 272px;
 }
 .text_ex{
-    padding-left: 33px;
+    padding-left: 24px;
     padding-bottom: 10px;
 }
 .excursion_text{
     font-family: "Conthrax";
     font-size: 40px;
-    padding-bottom: 21px;
+    padding-bottom: 10px;
 }
 .excursiom_text-mini{
     font-family: 'DinproRegular';
@@ -103,8 +134,59 @@
     background-color: rgba(188, 182, 121, 1);
     font-family:'DinproRegular';
     font-size: 28px;
-    width: 324px;
+    width: 353px;
     height: 66px;
-    margin-left:622px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 621px;
 }
+.block-image{
+    display: grid;
+    grid-area: 1/1;
+
+}
+.text_block, .text_block-title{
+    display: grid;
+    grid-area: 1/1;  
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;  
+    align-items: end;
+}
+.text_block-title{
+    align-items: center;
+}
+.input, .textarea, .button-form{
+    font-family: "DinproRegular";
+    font-size: 28px;
+    color: rgba(28, 27, 23, 0.72);
+    border: 2px solid rgba(160, 143, 108, 1);
+
+}
+.input, .textarea{
+    padding-left: 44px;
+}
+input{
+    height: 84px;
+}
+.button-form{
+    height: 66px;
+    width: 370px;
+    color: rgba(28, 27, 23, 0.5);
+}
+.col{
+    @apply flex flex-col;
+}
+.input:hover{
+    box-shadow: 8px 8px 22px 0px rgba(126, 116, 81, 0.5);
+}
+.textarea:hover{
+    box-shadow: 8px 8px 22px 0px rgba(126, 116, 81, 0.5);
+}
+
+
+
+
+
+
 
