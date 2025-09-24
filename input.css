@@ -35,6 +35,7 @@
 /* Поменять _ на -, 
 брейк поинт,
 если бг, где должно предполагаться смена картинки, надо бг задавать в style
+сделать alt
 */
 .nav_drop :last-child {
     border:none;
@@ -256,14 +257,17 @@ input{
     padding-bottom: 13px
 }
 .film-button{
-    @apply  bg-[#BCB679]
-    w-[212px]
-    h-[56px]
-    font-['DinproRegular']
-    text-[22px] 
-    justify-center
-    items-center;
+    background-color:#BCB679;
+    width: 212px;
+    height: 56px;
+    display: flex;
+    font-family:'DinproRegular';
+    font-size: 22px;
+    align-items: center;
+    padding-left: 21px;
+    gap: 16px
 }
+
 .galary-text::before{
     content: "";
     display: block;
@@ -277,6 +281,19 @@ input{
     transform: rotateY(180deg);
     right: 0px;
     bottom: -184px;
+}
+.section-list{
+    font-family: 'DinproRegular';
+    font-size: 20px;
+}
+.footer-icon{
+    width: 32px;
+    height: 32px;
+}
+.footer-text{
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
 }
 
 
