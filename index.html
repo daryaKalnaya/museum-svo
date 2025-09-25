@@ -15,27 +15,27 @@
         <div class="header_container flex gap-[293px] items-center pl-[155px] pt-[30px] pb-[38px]">
             <div class="header_logo flex gap-[66px]">
                 <a href="#" >
-                    <img src="image/logo1.png" alt="">
+                    <img src="image/logo1.png" alt="Логотип">
                 </a>
                 <a href="#">
-                    <img src="image/logo2.png" class="pt-[7px]">
+                    <img src="image/logo2.png" alt="Логотип" class="pt-[7px]">
                 </a>
             </div>
             <ul class="nav flex gap-[107px] font-[DinproMedium] text-[20px] text-[#1C1B17]">
-                <li>
+                <li class="nav-link">
                     <a href="#">Выставки</a>
                 </li>
-                <li>
+                <li class="nav-link">
                     <a href="#">Экскурсии</a>
                 </li>
                 <li class="relative group">
-                    <div class="nav_link flex">
-                        <a href="#" >Посетителям</a>
+                    <div class="nav-link flex relative">
+                        <a href="#">Посетителям</a>
                         <a href="#" class="vector pt-[11px] pl-[8px]">
                             <img src="image/Vector 13.png">
                         </a>
                     </div>
-                    <div class="nav_drop absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+                    <div class="z-0 nav_drop absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible">
                         <a href="#" class="links_nav">Афиша</a>
                         <a href="#" class="links_nav">События</a>
                         <a href="#" class="links_nav">Новости</a>
@@ -49,13 +49,13 @@
                     </div>
                 </li>
                 <li class="relative group">
-                    <div class="nav_link flex">
+                    <div class="nav-link flex relative">
                         <a href="#">Учителям</a>
                         <a href="#" class="vector pt-[11px] pl-[8px]">
                             <img src="image/Vector 13.png">
                         </a>
                     </div>
-                    <div class="nav_drop absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+                    <div class="z-0 nav_drop absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible">
                         <a href="#" class="links_nav">Важность изучения СВО в школах</a>
                         <a href="#" class="links_nav">Методические рекомендации</a>
                         <a href="#" class="links_nav">Книга памяти</a>
@@ -67,24 +67,24 @@
                     </div>
                 </li>
                 <li class="relative group">
-                    <div class="nav_link flex">
+                    <div class="nav-link flex relative">
                         <a href="#">О нас</a>
                         <a href="#" class="vector pt-[11px] pl-[8px]">
                             <img src="image/Vector 13.png">
                         </a>
                     </div>
-                    <div class="nav_drop absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible">
-                        <a href="#" class="links_nav">Юридическая информация</a>
-                        <a href="#" class="links_nav">О нас в СМИ</a>
-                        <a href="#" class="links_nav">Отзывы</a>
-                        <a href="#" class="links_nav">Партнеры музея истории СВО</a>
-                        <a href="#" class="links_nav">Проекты</a>
-                        <a href="#" class="links_nav">Пресс-служба</a>
-                        <a href="#" class="links_nav">Вакансии</a>
-                        <a href="#" class="links_nav">Филиалы</a>
-                        <a href="#" class="links_nav">Контакты</a>
-                        <a href="#" class="links_nav">Написать руководителю музея</a>
-                        <a href="#" class="links_nav">МУзей истории СВО в 360</a>
+                    <div class="z-0 nav_drop2 absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+                        <a href="#" class="links_nav-last">Юридическая информация</a>
+                        <a href="#" class="links_nav-last">О нас в СМИ</a>
+                        <a href="#" class="links_nav-last">Отзывы</a>
+                        <a href="#" class="links_nav-last">Партнеры музея истории СВО</a>
+                        <a href="#" class="links_nav-last">Проекты</a>
+                        <a href="#" class="links_nav-last">Пресс-служба</a>
+                        <a href="#" class="links_nav-last">Вакансии</a>
+                        <a href="#" class="links_nav-last">Филиалы</a>
+                        <a href="#" class="links_nav-last">Контакты</a>
+                        <a href="#" class="links_nav-last">Написать руководителю музея</a>
+                        <a href="#" class="links_nav-last">МУзей истории СВО в 360&ordm;</a>
                     </div>
                 </li>
             </ul>
@@ -115,12 +115,14 @@
             </div>
             <div class="blocki flex flex-row gap-[20px] pb-[250px] pt-[34px] ">
                 <div class="block1 relative max-h-[290px]">
-                    <a href="#" class="link grid">
-                        <img src="image/img1.png" class="block-image min-w-[465px]">
+                    <a href="#" class="link-block grid relative overflow-hidden">
+                        <img src="image/img1.png" class="block-image min-w-[465px] z-1 relative">
                         <div class="text_block-left pl-[12px]">
-                            <span class="text_block-title font-[Conthrax] text-[58px] pb-[35px] ">Выставки</span>
+                            <span class="text_block-title font-[Conthrax] text-[58px] pb-[35px]">Выставки</span>
                             <p class="text_block-regular font-[DinproRegular] text-[18px] ">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
                         </div>
+                        <!-- <div class="gradient-block-left z-2 min-w-[620px] min-h-[453px]"></div> -->
+                        <div class="gradient-block-left z-2 w-full h-full"></div>
                     </a>
                     <div class="arrow">
                         <img src="image/Vector 15.png" class="absolute top-[25px] left-[10px]">
@@ -129,23 +131,24 @@
                         <img src="image/Group 190.png" class="absolute top-[-57px] left-[-83px]">
                     </div>
                     <div class="vector2">
-                        <img src="image/Group 189.png" class="absolute bottom-[-42px] right-[-38px]">
+                        <img src="image/Group 189.png" class="absolute bottom-[-41px] right-[-38px] z-1">
                     </div>
                 </div>
                 <div class="block relative">
-                    <a href="#" class="link grid">
+                    <a href="#" class="link-block grid relative overflow-hidden">
                         <img src="image/img2.png" class="block-image min-h-[290px] min-w-[303px]">
                         <div class="text_block-right pl-[12px]">
                             <span class="text_block-title font-[Conthrax] text-[58px]">О нас</span>
                             <p class="text_block-regular font-[DinproRegular] text-[18px] pr-[60px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
                         </div>
+                        <div  class="gradient-block-right"></div>
                     </a>
                     <img src="image/Vector 15.png" class="absolute bottom-[25px] right-[15px]">
                     <img src="image/Group 188.png" class="absolute right-[-73px] bottom-[11px]">
                 </div>
             </div>
         </div>
-        <div class="container pl-[163px]">
+        <div class="container pl-[382px]">
             <div class="container_top flex justify-between gap-[50px] pb-[106px]">
                 <div class="container_top-title">
                     <p class="hero-title-line">Выставки</p>
@@ -156,83 +159,85 @@
                     <p class="hero-text w-[950px]">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
                 </div>
             </div>
-            <div class="cards flex gap-[85px] pb-[94px]">
-                <a href="#" class="excursion">
-                    <div class="excursion_img">
-                        <img src="image/img3.png" class="img_ex">
-                    </div>
-                    <div class="text_ex">
-                        <p class="excursion_text">Экскурсия 1</p>
-                        <p class="excursiom_text-mini">с 9.00 до 9.00</p>
-                        <p class="excursiom_text-mini">1 января — 1 января</p>
-                    </div>
-                </a>
-                <a href="#" class="excursion">
-                    <div class="excursion_img">
-                        <img src="image/img3.png" class="img_ex">
-                    </div>
-                    <div class="text_ex">
-                        <p class="excursion_text">Экскурсия 1</p>
-                        <p class="excursiom_text-mini">с 9.00 до 9.00</p>
-                        <p class="excursiom_text-mini">1 января — 1 января</p>
-                    </div>
-                </a>
-                <a href="#" class="excursion">
-                    <div class="excursion_img">
-                        <img src="image/img3.png" class="img_ex">
-                    </div>
-                    <div class="text_ex">
-                        <p class="excursion_text">Экскурсия 1</p>
-                        <p class="excursiom_text-mini">с 9.00 до 9.00</p>
-                        <p class="excursiom_text-mini">1 января — 1 января</p>
-                    </div>
-                </a>
-            </div>
-            <button class="button_1">смотреть все</button>
-        </div>
-        <div class="container_top pt-[111px] pr-[155px] pl-[162px]">
-            <div class="container_top-title flex flex-row gap-[50px] pb-[110px] relative">
-                <div class="">
-                    <p class="hero-text max-w-[912px] text-right pt-[15px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
-                    <p class="hero-text max-w-[912px] text-right">Задача — сохранить память о саратовцах-участниках СВО.</p>
-                    <p class="hero-text max-w-[912px] text-right">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
+            <div class="all-cards flex flex-col items-center">
+                <div class="cards flex gap-[85px] pb-[94px] ">
+                    <a href="#" class="excursion">
+                        <div class="excursion_img">
+                            <img src="image/img3.png" class="img_ex">
+                        </div>
+                        <div class="text-ex">
+                            <p class="excursion_text">Экскурсия 1</p>
+                            <p class="excursiom_text-mini">с 9.00 до 9.00</p>
+                            <p class="excursiom_text-mini">1 января — 1 января</p>
+                        </div>
+                    </a>
+                    <a href="#" class="excursion">
+                        <div class="excursion_img">
+                            <img src="image/img3.png" class="img_ex">
+                        </div>
+                        <div class="text-ex">
+                            <p class="excursion_text">Экскурсия 1</p>
+                            <p class="excursiom_text-mini">с 9.00 до 9.00</p>
+                            <p class="excursiom_text-mini">1 января — 1 января</p>
+                        </div>
+                    </a>
+                    <a href="#" class="excursion">
+                        <div class="excursion_img">
+                            <img src="image/img3.png" class="img_ex">
+                        </div>
+                        <div class="text-ex">
+                            <p class="excursion_text">Экскурсия 1</p>
+                            <p class="excursiom_text-mini">с 9.00 до 9.00</p>
+                            <p class="excursiom_text-mini">1 января — 1 января</p>
+                        </div>
+                    </a>
                 </div>
-                <p class="hero-title">Экскурсии</p>
-                <img src="image/Vector 17.png" class="absolute top-[95px] right-[-16px]">
+                <button class="button_1">смотреть все</button>
             </div>
-            <div class="cards flex gap-[85px] pb-[94px]">
-                <a href="#" class="excursion">
-                    <div class="excursion_img">
-                        <img src="image/img3.png" class="img_ex">
-                    </div>
-                    <div class="text_ex">
-                        <p class="excursion_text">Экскурсия 1</p>
-                        <p class="excursiom_text-mini">с 9.00 до 9.00</p>
-                        <p class="excursiom_text-mini">1 января — 1 января</p>
-                    </div>
-                </a>
-                <a href="#" class="excursion">
-                    <div class="excursion_img">
-                        <img src="image/img3.png" class="img_ex">
-                    </div>
-                    <div class="text_ex">
-                        <p class="excursion_text">Экскурсия 1</p>
-                        <p class="excursiom_text-mini">с 9.00 до 9.00</p>
-                        <p class="excursiom_text-mini">1 января — 1 января</p>
-                    </div>
-                </a>
-                <a href="#" class="excursion">
-                    <div class="excursion_img">
-                        <img src="image/img3.png" class="img_ex">
-                    </div>
-                    <div class="text_ex">
-                        <p class="excursion_text">Экскурсия 1</p>
-                        <p class="excursiom_text-mini">с 9.00 до 9.00</p>
-                        <p class="excursiom_text-mini">1 января — 1 января</p>
-                    </div>
-                </a>
             </div>
-        <button class="button_1">смотреть все</button>
+            <div class="container_top  pt-[111px] pr-[155px] pl-[162px] flex flex-col items-center">
+                <div class="container_top-title flex flex-row gap-[50px] pb-[110px] relative">
+                    <div class="">
+                        <p class="hero-text max-w-[912px] text-right pt-[15px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
+                        <p class="hero-text max-w-[912px] text-right">Задача — сохранить память о саратовцах-участниках СВО.</p>
+                        <p class="hero-text max-w-[912px] text-right">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
+                    </div>
+                    <p class="hero-title">Экскурсии</p>
+                    <img src="image/Vector 17.png" class="absolute top-[95px] right-[-16px]">
+                </div>
+                <div class="cards flex gap-[85px] pb-[94px]">
+                    <a href="#" class="excursion">
+                        <div class="excursion_img">
+                            <img src="image/img3.png" class="img_ex">
+                        </div>
+                        <div class="text-ex">
+                            <p class="excursion_text">Экскурсия 1</p>
+                            <p class="excursiom_text-mini">с 9.00 до 9.00</p>
+                            <p class="excursiom_text-mini">1 января — 1 января</p>
+                        </div>
+                    </a>
+                    <a href="#" class="excursion">
+                        <div class="excursion_img">
+                            <img src="image/img3.png" class="img_ex">
+                        </div>
+                        <div class="text-ex">
+                            <p class="excursion_text">Экскурсия 1</p>
+                            <p class="excursiom_text-mini">с 9.00 до 9.00</p>
+                            <p class="excursiom_text-mini">1 января — 1 января</p>
+                        </div>
+                    </a>
+                    <a href="#" class="excursion">
+                        <div class="excursion_img">
+                            <img src="image/img3.png" class="img_ex">
+                        </div>
+                        <div class="text-ex">
+                            <p class="excursion_text">Экскурсия 1</p>
+                            <p class="excursiom_text-mini">с 9.00 до 9.00</p>
+                            <p class="excursiom_text-mini">1 января — 1 января</p>
+                        </div>
+                    </a>
+                </div>
+            <button class="button_1">смотреть все</button>
         </div>  
         <div class="section pt-[131px] pl-[162px] pr-[148px] flex gap-[55px]">
             <div class="hero-main3 gap-[55px] relative">
@@ -249,6 +254,7 @@
                     <a href="#" class="link grid">
                         <img src="image/topImage.png" class="block-image w-[788px]">
                         <span class="text_block-right font-[Conthrax] text-[58px] pl-[11px] pt-[12px]">События</span> 
+                        <div class="gradient-block3"></div>
                     </a>
                     <img src="image/Vector 18.png" class="absolute top-[-64px] right-[-7px]">
                     <img src="image/Vector 15.png" class="absolute top-[60px] right-[37px]">
@@ -285,8 +291,8 @@
                 <input type="email" name="#" class="input" placeholder="e-mail">
                 <textarea cols="40" name="#" class="textarea pt-[20px]" placeholder="Ваш вопрос" rows="6"></textarea>
                 <div class="container_button-form flex gap-[48px] pt-[32px] pb-[127px]">
-                    <input type="submit" name="#" class="button-form" value="отчистить">
-                    <input type="reset" name="#" class="button-form cursor-pointer bg-[#BCB679]" value="отправить">
+                    <input type="reset" name="#" class="button-form" value="отчистить">
+                    <input type="submit" name="#" class="button-form bg-[#BCB679]" value="отправить">
                 </div>
                 <img src="image/Group 195.png" class="absolute bottom-[403px] left-[-130px]">
                 <img src="image/Group 188.png" class="absolute bottom-[287px] right-[-72px]"> 
@@ -327,10 +333,7 @@
             </div>
         </div>
         <div class="tabl pl-[162px] pb-[283px]">
-            <div class="tabl_text col gap-[15px] pb-[113px]">
-                <p class="hero-title">Методические</p>
-                <p class="hero-title">рекомендации</p>
-            </div>
+            <p class="hero-title tabl-title pb-[128px] tabl-title relative">Методические рекомендации</p>
             <div class="flex flex-col gap-[50px] relative">
                 <div class="help flex gap-[19px]">
                     <div class="cell ">
@@ -352,7 +355,7 @@
                         <p class="hero-text text-[#7E7451]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
-                <img src="image/Group 202.png" class="absolute top-[-57px] right-[87px]">
+                <img src="image/Group 202.png" class="absolute top-[-58px] right-[87px]">
             </div>
         </div>
         <div class="film pl-[162px] flex flex-col gap-[82px]">

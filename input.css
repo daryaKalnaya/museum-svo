@@ -37,9 +37,9 @@
 если бг, где должно предполагаться смена картинки, надо бг задавать в style
 сделать alt
 */
-.nav_drop :last-child {
+.nav_drop :last-child, .nav_drop2 :last-child {
     border:none;
-}
+} 
 .hero-title, .hero-title-line{
     font-family: "Conthrax";
     font-size: 88px;
@@ -56,7 +56,6 @@
     font-family: 'Conthrax';
     line-height: 100%;
 }
-
 .hero-main{
     display: flex;
     flex-direction: column;
@@ -81,12 +80,44 @@
     display: flex;
     flex-direction: column;
     background-color: white;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    top: 31px;
+    left: -34px;
+    padding-top: 27px;
+    padding-bottom: 16px;
 }
-.nav_link:hover{
-    border-bottom: 7px;
-    border-style: solid;
-    padding-top: 6px;
-    border-image: linear-gradient(90deg, rgba(221, 216, 175, 1), white) 1;
+.nav_drop2{
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    top: 31px;
+    left: -103px;
+    padding-top: 27px;
+    padding-bottom: 16px;
+}
+
+.nav-link::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background: linear-gradient(90deg, #DDD8AF 0%, #ffffff 100%);
+    width: 119px;
+    height: 7px;
+    transform: translateY(34px);
+    opacity: 0%;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+}
+.nav-link:hover::before {
+    opacity: 100%;
+    visibility: visible;
+}
+.nav-link:focus::before {
+    opacity: 100%;
+    visibility: visible;
 }
 .links_nav{
     width: 329px;
@@ -96,8 +127,20 @@
     padding-top: 7px;
     padding-bottom: 13px;
     left: 31px;
-    top: 41px;
     border-image: linear-gradient(90deg, rgba(221, 216, 175, 1), white) 1;
+}
+.links_nav-last{
+    width: 276px;
+    position: relative;
+    border-bottom: 2px;
+    border-style: solid;
+    padding-top: 7px;
+    padding-bottom: 13px;
+    left: 31px;
+    border-image: linear-gradient(90deg, rgba(221, 216, 175, 1), white) 1; 
+}
+.links_nav:hover, .links_nav-last:hover{
+    box-shadow: 0px 5px 5px rgba(126, 116, 81, 0.52);
 }
 .container-hero {
     display: grid;
@@ -119,7 +162,9 @@
     border-image: linear-gradient(90deg, rgba(221, 216, 175, 1), rgba(240, 238, 225, 1)) 1;
     padding-bottom: 40px;
 }
-
+.link-block:hover{
+    box-shadow: 0px 0px 22px 8px rgba(126, 116, 81, 0.5);
+}
 .excursion{
     background-color: rgba(240, 238, 225, 1);
     height: 429px;
@@ -127,6 +172,9 @@
     min-width: 476px;
     display: flex;
     flex-direction: column;
+}
+.excursion:hover{
+    box-shadow: 0px 0px 17.5px 0px rgba(126, 116, 81, 0.52);
 }
 .img_ex{
     width: 100%;
@@ -136,7 +184,7 @@
 .excursion_img{
     min-height: 272px;
 }
-.text_ex{
+.text-ex{
     padding-left: 24px;
     padding-bottom: 10px;
 }
@@ -159,8 +207,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 620px;
+    /* margin-left: 620px; */
 }
+.button_1:hover{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid var(--color-beige);
+    cursor: pointer;
+
+}
+.container{
+        display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* .container_top{
+        display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
 .block-image{
     display: grid;
     grid-area: 1/1;
@@ -171,13 +239,43 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
+    z-index: 2;
     
+}
+.gradient-block-left{
+    background: radial-gradient(50% 50% at 50% 50%, #BCB679 0%, rgba(254, 253, 228, 0) 100%);
+    position: absolute; 
+    backdrop-filter: blur(55.5px);
+    z-index: 1;
+    bottom: -131px;
+    left: -180px;
+}
+.gradient-block-right{
+    background: radial-gradient(50% 50% at 50% 50%, #2B2A29 0%, rgba(254, 253, 228, 0) 100%);
+    min-width: 303px;
+    min-height: 290px;
+    position: absolute; 
+    grid-area: 1/1; 
+    top: -128px;
+    left: -125px;
+    z-index: 1;
+    backdrop-filter: blur(55.5px)
+}
+.gradient-block3{
+    min-width: 788px;
+    min-height: 123px;
+    grid-area: 1/1; 
+    background: radial-gradient(50% 50% at 50% 50%, #BCB679 0%, rgba(254, 253, 228, 0) 100%);
+    backdrop-filter: blur(55.5px);
+    z-index: 1;
+
 }
 .text_block{
     transform: translateY(-21px);
 }
 .text_block-right{
     grid-area: 1/1; 
+    z-index: 2;
 }
 .input, .textarea, .button-form{
     font-family: "DinproRegular";
@@ -197,15 +295,26 @@ input{
     width: 370px;
     color: rgba(28, 27, 23, 0.5);
 }
+.button-form:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 22px 0px rgba(126, 116, 81, 0.5);
+}
+.input:focus{
+    outline: none; 
+    box-shadow: 0px 0px 22px 0px rgba(126, 116, 81, 0.5);
+}
+.textarea:focus{
+    outline: none; 
+    box-shadow: 0px 0px 22px 0px rgba(126, 116, 81, 0.5);
+}
 .col{
     @apply flex flex-col;
 }
-
 .input:hover{
-    box-shadow: 8px 8px 22px 0px rgba(126, 116, 81, 0.5);
+    box-shadow: 0px 0px 22px 0px rgba(126, 116, 81, 0.5);
 }
 .textarea:hover{
-    box-shadow: 8px 8px 22px 0px rgba(126, 116, 81, 0.5);
+    box-shadow: 0px 0px 22px 0px rgba(126, 116, 81, 0.5);
 }
 .num{
     font-size: 128px;
@@ -294,6 +403,16 @@ input{
     display: flex;
     flex-direction: row;
     gap: 26px;
+}
+.tabl-title::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background: linear-gradient(90deg, #DDD8AF 0%, #ffffff 100%);
+    width: 700px;
+    height: 60px;
+    right: 73px;
+    top: 74px;
 }
 
 
