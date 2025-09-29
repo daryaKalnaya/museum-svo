@@ -4,21 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css"/>
     <title>Главная - Музей СВО</title>
 </head>
 <body>
     <header class="fixed top-0 left-0 bg-white w-[100%] z-3">
-        <div class="ran_line bg-[#737051] flex justify-between items-center pl-[162px] pt-[8px] pb-[10px] pr-[171px] text-white font-[DinproMedium] text-[18px] h-[40px]">
+        <div class="ran-line bg-darkBei text-white flex justify-between items-center font-[DinproMedium] text-[18px] h-[40px] pl-[23px] pr-[23px] l:pl-[162px] l:pr-[162px] ">
             <span>Выставки</span>
             <span>Выставки</span>
         </div>
-        <div class="header_container flex gap-[293px] items-center pl-[155px] pt-[30px] pb-[38px]">
+        <div class="nav-mobile h-[102px] flex items-center justify-between pl-[23px] pr-[30px] l:hidden">
+            <img src="image/logo-mobile.svg" alt="#">
+            <div>
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label class="burger" for="burger-checkbox"></label>
+            </div>
+        </div>
+        <div class="menu-mobile l:hidden">
+
+        </div>
+        <div class="header_container hidden l:flex gap-[293px] items-center pl-[155px] pt-[30px] pb-[38px]">
             <div class="header_logo flex gap-[66px]">
                 <a href="#" >
-                    <img src="image/logo1.png" alt="Логотип">
+                    <img src="image/logo1.png" alt="#">
                 </a>
                 <a href="#">
-                    <img src="image/logo2.png" alt="Логотип" class="pt-[7px]">
+                    <img src="image/logo2.png" alt="#" class="pt-[7px]">
                 </a>
             </div>
             <ul class="nav flex gap-[107px] font-[DinproMedium] text-[20px] text-[#1C1B17]">
@@ -115,13 +126,12 @@
             </div>
             <div class="blocki flex flex-row gap-[20px] pb-[250px] pt-[34px] ">
                 <div class="block1 relative max-h-[290px]">
-                    <a href="#" class="link-block grid relative overflow-hidden">
-                        <img src="image/img1.png" class="block-image min-w-[465px] z-1 relative">
+                    <a href="#" class="link-block grid relative overflow-hidden min-w-[465px]">
+                        <img src="image/img1.png" class="block-image z-1">
                         <div class="text_block-left pl-[12px]">
                             <span class="text_block-title font-[Conthrax] text-[58px] pb-[35px]">Выставки</span>
                             <p class="text_block-regular font-[DinproRegular] text-[18px] ">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
                         </div>
-                        <!-- <div class="gradient-block-left z-2 min-w-[620px] min-h-[453px]"></div> -->
                         <div class="gradient-block-left z-2 w-full h-full"></div>
                     </a>
                     <div class="arrow">
@@ -148,7 +158,7 @@
                 </div>
             </div>
         </div>
-        <div class="container pl-[382px]">
+        <div class="container">
             <div class="container_top flex justify-between gap-[50px] pb-[106px]">
                 <div class="container_top-title">
                     <p class="hero-title-line">Выставки</p>
@@ -159,7 +169,7 @@
                     <p class="hero-text w-[950px]">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
                 </div>
             </div>
-            <div class="all-cards flex flex-col items-center">
+            <div class="all-cards flex flex-col items-center pl-[162px]  pr-[144px]">
                 <div class="cards flex gap-[85px] pb-[94px] ">
                     <a href="#" class="excursion">
                         <div class="excursion_img">
@@ -249,29 +259,31 @@
                 </div>
                 <img src="image/Group 191.png" class="vector absolute bottom-[-124px] left-[-161px]">
             </div>   
-            <div class="contn flex flex-col gap-[27px] relative">
-                <div class="top_img pt-[12px]">
+            <div class="contn flex flex-col gap-[27px] relative pt-[12px] pb-[85px]">
+                <div class="top_img">
                     <a href="#" class="link grid">
-                        <img src="image/topImage.png" class="block-image w-[788px]">
+                        <img src="image/topImage.png" class="block-image max-w-[788px]">
                         <span class="text_block-right font-[Conthrax] text-[58px] pl-[11px] pt-[12px]">События</span> 
                         <div class="gradient-block3"></div>
                     </a>
                     <img src="image/Vector 18.png" class="absolute top-[-64px] right-[-7px]">
                     <img src="image/Vector 15.png" class="absolute top-[60px] right-[37px]">
                 </div>
-                <div class="bott_img flex pb-[71px]">
+                <div class="bott_img flex gap-[25px]">
                     <a href="#" class="link grid">
                         <img src="image/leftImage.png" class="block-image min-h-[199px]">
-                        <div class="text_block-left flex flex-col-reverse pl-[14px]">
+                        <div class="text_block-left flex flex-col-reverse pl-[14px] max-w-[418px]">
                             <span class="text_block font-[Conthrax] text-[58px]">Новости</span>
-                            <p class="text_block-regular font-[DinproRegular] text-[18px] w-[429px] pt-[71px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
+                            <p class="text_block-regular font-[DinproRegular] text-[18px] max-w-[429px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
                         </div>
+                        <div class="gradient-block4"></div>
                     </a>
                     <img src="image/Vector 15.png" class="absolute top-[183px] left-[9px]">
                     <img src="image/Group 192.png" class="absolute top-[103px] left-[-81px]">
                     <a href="#" class="link grid">
                         <img src="image/rightImage.png" class="block-image min-w-[345px]">
                         <span class="text_block-left font-[Conthrax] text-[58px] pb-[22px] pl-[16px]">Афиша</span>
+                    <div class="gradient-block5"></div>
                     </a>
                     <img src="image/Vector 16.png" class="absolute top-[120px] right-[-89px]">
                     <img src="image/Vector 15.png" class="absolute top-[188px] right-[300px]">
@@ -291,8 +303,8 @@
                 <input type="email" name="#" class="input" placeholder="e-mail">
                 <textarea cols="40" name="#" class="textarea pt-[20px]" placeholder="Ваш вопрос" rows="6"></textarea>
                 <div class="container_button-form flex gap-[48px] pt-[32px] pb-[127px]">
-                    <input type="reset" name="#" class="button-form" value="отчистить">
-                    <input type="submit" name="#" class="button-form bg-[#BCB679]" value="отправить">
+                    <input type="reset" name="#" class="button-form-reset" value="отчистить">
+                    <input type="submit" name="#" class="button-form-submit bg-[#BCB679]" value="отправить">
                 </div>
                 <img src="image/Group 195.png" class="absolute bottom-[403px] left-[-130px]">
                 <img src="image/Group 188.png" class="absolute bottom-[287px] right-[-72px]"> 
@@ -301,8 +313,8 @@
         <img src="image/photo2.png">
         <div class="teachers flex flex-row pt-[103px] pl-[162px] pb-[200px] gap-[26px]">
             <div class="hero-main3 relative w-[783px] gap-[44px]">
-                <div class="title_with_vector flex flex-row gap-[29px] items-end">
-                    <a href="#" class="hero-title1 text-[70px]">Учителям</a>
+                <div class="box-title-shadow flex flex-row gap-[29px] items-end">
+                    <a href="#" class="hero-title1 text-[70px] hero-title-shadow">Учителям</a>
                     <a href="#"><img src="image/Vector 15.png" class="w-[47px] h-[48px]"></a>
                 </div>
                 <div class="block-hero-text">
@@ -361,8 +373,8 @@
         <div class="film pl-[162px] flex flex-col gap-[82px]">
             <p class="film-title max-w-[1500px] flex flex-col">Документальные фильмы</p>
             <div class="flex flex-col gap-y-[54px]">
-                <div class="grid">
-                    <img src="image/img6.png" class="img-film min-w-[1596px] min-h-[417px] object-cover">
+                <div class="img-film-box grid max-h-[417px] max-w-[1596px]">
+                    <img src="image/img6.png" class="img-film min-h-[417px]">
                     <div class="film-text pt-[66px]">
                         <p class="box-film-title">Фильм 1</p>
                         <p class="hero-text text-[#FFFFFF] max-w-[651px] pb-[41px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -370,22 +382,22 @@
                     </div>
                 </div>
                 <div class="flex flex-row gap-[20px] pb-[180px]">
-                    <div class="grid">
-                        <img src="image/img6.png" class="img-film min-w-[626px]">
+                    <div class="img-film-box grid min-w-[626px]">
+                        <img src="image/img6.png" class="img-film max-h-[318px]">
                         <div class="film-text pt-[144px]">
                             <p class="box-film-title">Фильм 2</p>
                             <button class="film-button"><img src="image/Polygon 2.png">смотреть</button>
                         </div>
                     </div>
-                    <div class="grid">
-                        <img src="image/img6.png" class="img-film min-w-[465px]">
+                    <div class="img-film-box grid min-w-[465px]">
+                        <img src="image/img6.png" class="img-film max-h-[318px]">
                         <div class="film-text pt-[144px]">
                             <p class="box-film-title">Фильм 3</p>
                             <button class="film-button"><img src="image/Polygon 2.png">смотреть</button>
                         </div>
                     </div>
-                    <div class="grid">
-                        <img src="image/img6.png" class="img-film min-w-[465px]">
+                    <div class="img-film-box grid min-w-[465px]">
+                        <img src="image/img6.png" class="img-film max-h-[318px]">
                         <div class="film-text pt-[144px]">
                             <p class="box-film-title">Фильм 4</p>
                             <button class="film-button"><img src="image/Polygon 2.png">смотреть</button>
@@ -395,26 +407,40 @@
             </div>
         </div>
         <section class="pl-[162px]">
-            <div class="galary-text gap-[238px] flex flex-row  items-end relative pb-[72px]">
+            <div class="box-title-shadow gallery-text gap-[238px] flex flex-row items-end relative pb-[72px]">
                 <a href="#"><p class="hero-title">Галерея</p></a>
                 <a href="#"><img src="image/Vector 15.png" class="w-[47px] h-[48px]"></a>
             </div>
             <p class="hero-text max-w-[1564px] pb-[60px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div class="flex flex-col gap-[28px] pb-[172px]">
                 <div class="flex flex-row gap-[20px]">
-                    <div class="flex flex-row gap-[20px] max-h-[511px]">
-                        <img src="image/img7.png" class="max-w-[465px] object-cover">
-                        <img src="image/img7.png" class="min-w-[788px] object-cover">
+                    <div class="flex flex-row gap-[20px]">
+                        <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box max-w-[465px] min-h-[511px]">
+                            <img src="image/img7.png" class="gallery-img">
+                        </a>
+                        <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box min-w-[788px] max-h-[511px]">
+                            <img src="image/img7.png" class="gallery-img">
+                        </a>
                     </div>
                     <div class=" flex flex-col gap-[15px]">
-                        <img src="image/img7.png" class="min-h-[306px] max-w-[303px] object-cover">
-                        <img src="image/img7.png" class="max-h-[190px] max-w-[303px] object-cover">
+                        <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box min-h-[306px] max-w-[303px]">
+                            <img src="image/img7.png" class="gallery-img">
+                        </a>
+                        <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box max-h-[190px] max-w-[303px]">
+                            <img src="image/img7.png" class="gallery-img">
+                        </a>
                     </div>
                 </div>
-                <div class="max-h-[346px] flex flex-row gap-[20px] relative">
-                    <img src="image/img7.png" class="max-w-[465px] object-cover">
-                    <img src="image/img7.png" class="max-w-[303px] object-cover">
-                    <img src="image/img7.png" class="min-w-[788px] object-cover">
+                <div class="flex flex-row gap-[20px] relative">
+                    <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box max-w-[465px] min-h-[346px]">
+                        <img src="image/img7.png" class="gallery-img">
+                    </a>
+                    <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box max-w-[303px] min-h-[346px]">
+                        <img src="image/img7.png" class="gallery-img">
+                    </a>
+                    <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box min-w-[788px] max-h-[346px]">
+                        <img src="image/img7.png" class="gallery-img">
+                    </a>
                     <img src="image/Group 191.png" class="img-rotate absolute max-w-[660px]">
                 </div>
             </div>
@@ -423,8 +449,8 @@
             <img src="image/img8.png">
             <div class="flex flex-row gap-[30px] pr-[148px] pl-[162px] pb-[238px] pt-[78px]">
                 <div>
-                    <div class="flex flex-row gap-[252px] items-end pb-[50px]">
-                        <a href="#"><p class="hero-title">О нас</p></a>
+                    <div class="box-title-shadow flex flex-row gap-[252px] items-end pb-[50px]">
+                        <a href="#"><p class="hero-title hero-title-shadow">О нас</p></a>
                         <a href="#"><img src="image/Vector 15.png" class="w-[47px] h-[48px]"></a>
                     </div>
                     <div class="block-hero-text max-w-[953px]">
@@ -435,19 +461,21 @@
                 </div>
                 <div class="pt-[36px] flex flex-row gap-[27px]">
                     <a href="#" class="link grid">
-                        <img src="image/leftImage.png" class="block-image max-w-[404px] min-h-[276px] object-cover">
-                        <div class="text_block-left max-w-[404px] pb-[32px] pl-[15px] pr-[25px] relative">
+                        <img src="image/img9.png" class="block-image max-w-[404px] min-h-[276px] object-cover">
+                        <div class="text_block-left max-w-[404px] max-h-[276px] pb-[32px] pl-[15px] pr-[25px] relative">
                             <span class="text_block-title font-[Conthrax] text-[56px]">Филиалы</span>
                             <p class="text_block-regular font-[DinproRegular] text-[18px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
                             <img src="image/Vector 15.png" class="absolute top-[27px] right-[39px]">
+                            <div class="gradient-block5"></div>
                         </div>
                     </a>
                     <a href="#" class="link grid">
-                        <img src="image/bg.png" class="block-image max-w-[357px] min-h-[276px] object-cover">
+                        <img src="image/img10.png" class="block-image max-w-[357px] min-h-[276px] object-cover">
                         <div class="text_block-right max-w-[357px] relative pt-[15px] pl-[11px]">
                             <span class="text_block-title font-[Conthrax] text-[56px]">Проекты</span>
                             <p class="text_block-regular font-[DinproRegular] text-[18px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
                             <img src="image/Vector 15.png" class="absolute bottom-[29px] left-[8px]">
+                            <div class="gradient-block6"></div>
                         </div>
                     </a>
                 </div>
@@ -474,7 +502,6 @@
         <section>
             <p class="galary-text hero-title pl-[162px] flex items-end pb-[94px]">Контакты</p>
             <div class="map w-[100%] min-h-[295px] pb-[75px]">
-                <!-- https://yandex.ru/maps/?um=constructor%3Aa193311aebb3932423d49ee9aade7e7f4ec775c6a79642d9b21928e668d5751f&source=constructorLink -->
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa193311aebb3932423d49ee9aade7e7f4ec775c6a79642d9b21928e668d5751f&amp;width=100%25&amp;height=295&amp;lang=ru_RU&amp;scroll=false"></script>
             </div>
         </section>
@@ -482,11 +509,11 @@
             <div class="flex flex-col gap-[47px]">
                 <div class="footer-text">
                     <img src="image/phone.svg" class="footer-icon">
-                    <p href="#">+7 (8452) 24-20-00</p>
+                    <a href="#" class="footer-link">+7 (8452) 24-20-00</a>
                 </div>
                 <div class="footer-text">
                     <img src="image/email.svg" class="footer-icon">
-                    <p href="#">email@email.ru</p>
+                    <a href="#" class="footer-link">email@email.ru</a>
                 </div>
                 <div class="footer-text">
                     <img src="image/map.svg" class="footer-icon">
@@ -499,5 +526,11 @@
             </div>
         </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]',{
+        });
+    </script>
+
 </body>
 </html>
