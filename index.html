@@ -7,32 +7,96 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css"/>
     <title>Главная - Музей СВО</title>
 </head>
-<body>
+<body class="flex flex-col">
     <header class="fixed top-0 left-0 bg-white w-[100%] z-3">
         <div class="ran-line bg-darkBei text-white flex justify-between items-center font-[DinproMedium] text-[18px] h-[40px] pl-[23px] pr-[23px] l:pl-[162px] l:pr-[162px] ">
             <span>Выставки</span>
             <span>Выставки</span>
         </div>
-        <div class="nav-mobile h-[102px] flex items-center justify-between pl-[23px] pr-[30px] l:hidden">
-            <img src="image/logo-mobile.svg" alt="#">
-            <div>
+        <div class="nav-mobile h-[102px] flex items-center justify-between z-9 pl-[23px] pr-[30px] l:hidden">
+            <img src="image/logo-mobile.svg" class="w-[120px] xs:w-[147px]" alt="#">
+            <div class="burger-wrapper ">
                 <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
                 <label class="burger" for="burger-checkbox"></label>
+                <ul class="menu-list overflow-auto">
+                    <li class="menu-item nav-link">
+                        <details class="details" name="details">
+                            <summary class="details-title cursor-pointer">
+                                <img src="image/Vector 13.png" alt="" class="w-4 h-[9px]">
+                                <span href="#">Посетителям</span>
+                            </summary>
+                            <div class="details-content">
+                                <a href="#" class="links_nav">Афиша</a>
+                                <a href="#" class="links_nav">События</a>
+                                <a href="#" class="links_nav">Новости</a>
+                                <a href="#" class="links_nav">Вопрос-ответ</a>
+                                <a href="#" class="links_nav">Доступность</a>
+                                <a href="#" class="links_nav">Услуги</a>
+                                <a href="#" class="links_nav">Космический квиз</a>
+                                <a href="#" class="links_nav">Военно-патриотический квиз</a>
+                                <a href="#" class="links_nav">Писмо солдату СВО</a>
+                                <a href="#" class="links_nav">Экскурсия по экспозиции Музея истории СВО</a>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="menu-item nav-link">
+                        <details class="details" name="details">
+                            <summary class="details-title cursor-pointer">
+                                <img src="image/Vector 13.png" alt="" class="w-4 h-[9px]">
+                                <span href="#">Учителям</span>
+                            </summary>
+                            <div class="details-content">
+                                <a href="#" class="links_nav">Важность изучения СВО в школах</a>
+                                <a href="#" class="links_nav">Методические рекомендации</a>
+                                <a href="#" class="links_nav">Книга памяти</a>
+                                <a href="#" class="links_nav">Земляки-герои РФ</a>
+                                <a href="#" class="links_nav">Документальные фильмы</a>
+                                <a href="#" class="links_nav">Письмо солдату СВО</a>
+                                <a href="#" class="links_nav">Информация о музее истории СВО</a>
+                                <a href="#" class="links_nav">Галерея</a>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="menu-item nav-link">
+                        <details class="details" name="details">
+                            <summary class="details-title cursor-pointer">
+                                <img src="image/Vector 13.png" alt="" class="w-4 h-[9px]">
+                                <span href="#">О нас</span>
+                            </summary>
+                            <div class="details-content">
+                                <a href="#" class="links_nav">Юридическая информация</a>
+                                <a href="#" class="links_nav">О нас в СМИ</a>
+                                <a href="#" class="links_nav">Отзывы</a>
+                                <a href="#" class="links_nav">Партнеры музея истории СВО</a>
+                                <a href="#" class="links_nav">Проекты</a>
+                                <a href="#" class="links_nav">Пресс-служба</a>
+                                <a href="#" class="links_nav">Вакансии</a>
+                                <a href="#" class="links_nav">Филиалы</a>
+                                <a href="#" class="links_nav">Контакты</a>
+                                <a href="#" class="links_nav">Написать руководителю музея</a>
+                                <a href="#" class="links_nav">Музей истории СВО в 360&ordm;</a>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="menu-item nav-link">
+                        <a href="">Экскурсии</a>
+                    </li>
+                    <li class="menu-item nav-link">
+                        <a href="">Выставки</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="menu-mobile l:hidden">
-
-        </div>
-        <div class="header_container hidden l:flex gap-[293px] items-center pl-[155px] pt-[30px] pb-[38px]">
-            <div class="header_logo flex gap-[66px]">
+        <div class="header-container hidden items-center  l:flex l:justify-evenly xl:gap-[90px] xxl:justify-center xxl:gap-[293px] pt-[30px] pb-[38px]">
+            <div class="header-logo flex l:gap-[10px] xxl:gap-[66px]">
                 <a href="#" >
-                    <img src="image/logo1.png" alt="#">
+                    <img src="image/logo1.png" alt="#" class="l:pt-[7px] l:w-[90px] xl:pt-0 xxl:pt-0 xxl:w-[127px]">
                 </a>
                 <a href="#">
-                    <img src="image/logo2.png" alt="#" class="pt-[7px]">
+                    <img src="image/logo2.png" alt="#" class="pt-[7px] l:w-[140px] xl:pt-0 xxl:pt-0 xxl:w-[170px]">
                 </a>
             </div>
-            <ul class="nav flex gap-[107px] font-[DinproMedium] text-[20px] text-[#1C1B17]">
+            <ul class="nav flex font-[DinproMedium] text-[#1C1B17] l:gap-[30px] l:text-[15px] xl:gap-[50px] xl:text-[18px] xxl:text-[20px] xxl:gap-[107px] ">
                 <li class="nav-link">
                     <a href="#">Выставки</a>
                 </li>
@@ -42,313 +106,323 @@
                 <li class="relative group">
                     <div class="nav-link flex relative">
                         <a href="#">Посетителям</a>
-                        <a href="#" class="vector pt-[11px] pl-[8px]">
-                            <img src="image/Vector 13.png">
+                        <a href="#" class="vector l:pt-[8px] xl:pt-[10px] xxl:pt-[11px] pl-[8px]">
+                            <img src="image/Vector 13.png" class="l:w-4 xxl:min-w-[19px]">
                         </a>
                     </div>
-                    <div class="z-0 nav_drop absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible">
-                        <a href="#" class="links_nav">Афиша</a>
-                        <a href="#" class="links_nav">События</a>
-                        <a href="#" class="links_nav">Новости</a>
-                        <a href="#" class="links_nav">Вопрос-ответ</a>
-                        <a href="#" class="links_nav">Доступность</a>
-                        <a href="#" class="links_nav">Услуги</a>
-                        <a href="#" class="links_nav">Космический квиз</a>
-                        <a href="#" class="links_nav">Военно-патриотический квиз</a>
-                        <a href="#" class="links_nav">Писмо солдату СВО</a>
-                        <a href="#" class="links_nav">Экскурсия по экспозиции Музея истории СВО</a>
+                    <div class="z-0 nav-drop l:left-[-20px] xxl:left-[-34px]">
+                        <a href="#" class="link-nav link-size">Афиша</a>
+                        <a href="#" class="link-nav link-size">События</a>
+                        <a href="#" class="link-nav link-size">Новости</a>
+                        <a href="#" class="link-nav link-size">Вопрос-ответ</a>
+                        <a href="#" class="link-nav link-size">Доступность</a>
+                        <a href="#" class="link-nav link-size">Услуги</a>
+                        <a href="#" class="link-nav link-size">Космический квиз</a>
+                        <a href="#" class="link-nav link-size">Военно-патриотический квиз</a>
+                        <a href="#" class="link-nav link-size">Писмо солдату СВО</a>
+                        <a href="#" class="link-nav link-size">Экскурсия по экспозиции Музея истории СВО</a>
                     </div>
                 </li>
                 <li class="relative group">
                     <div class="nav-link flex relative">
                         <a href="#">Учителям</a>
-                        <a href="#" class="vector pt-[11px] pl-[8px]">
-                            <img src="image/Vector 13.png">
+                        <a href="#" class="vector l:pt-[8px] xl:pt-[10px] xxl:pt-[11px] pl-[8px]">
+                            <img src="image/Vector 13.png" class="l:w-4 xxl:min-w-[19px]">
                         </a>
                     </div>
-                    <div class="z-0 nav_drop absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible">
-                        <a href="#" class="links_nav">Важность изучения СВО в школах</a>
-                        <a href="#" class="links_nav">Методические рекомендации</a>
-                        <a href="#" class="links_nav">Книга памяти</a>
-                        <a href="#" class="links_nav">Земляки-герои РФ</a>
-                        <a href="#" class="links_nav">Документальные фильмы</a>
-                        <a href="#" class="links_nav">Письмо солдату СВО</a>
-                        <a href="#" class="links_nav">Информация о музее истории СВО</a>
-                        <a href="#" class="links_nav">Галерея</a>
+                    <div class="z-0 nav-drop l:left-[-27px] xxl:left-[-34px]">
+                        <a href="#" class="link-nav link-size">Важность изучения СВО в школах</a>
+                        <a href="#" class="link-nav link-size">Методические рекомендации</a>
+                        <a href="#" class="link-nav link-size">Книга памяти</a>
+                        <a href="#" class="link-nav link-size">Земляки-герои РФ</a>
+                        <a href="#" class="link-nav link-size">Документальные фильмы</a>
+                        <a href="#" class="link-nav link-size">Письмо солдату СВО</a>
+                        <a href="#" class="link-nav link-size">Информация о музее истории СВО</a>
+                        <a href="#" class="link-nav link-size">Галерея</a>
                     </div>
                 </li>
                 <li class="relative group">
                     <div class="nav-link flex relative">
                         <a href="#">О нас</a>
-                        <a href="#" class="vector pt-[11px] pl-[8px]">
-                            <img src="image/Vector 13.png">
+                        <a href="#" class="vector l:pt-[8px] xl:pt-[10px] xxl:pt-[11px] pl-[8px]">
+                            <img src="image/Vector 13.png" class="l:w-4  xxl:min-w-[19px]">
                         </a>
                     </div>
-                    <div class="z-0 nav_drop2 absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible">
-                        <a href="#" class="links_nav-last">Юридическая информация</a>
-                        <a href="#" class="links_nav-last">О нас в СМИ</a>
-                        <a href="#" class="links_nav-last">Отзывы</a>
-                        <a href="#" class="links_nav-last">Партнеры музея истории СВО</a>
-                        <a href="#" class="links_nav-last">Проекты</a>
-                        <a href="#" class="links_nav-last">Пресс-служба</a>
-                        <a href="#" class="links_nav-last">Вакансии</a>
-                        <a href="#" class="links_nav-last">Филиалы</a>
-                        <a href="#" class="links_nav-last">Контакты</a>
-                        <a href="#" class="links_nav-last">Написать руководителю музея</a>
-                        <a href="#" class="links_nav-last">МУзей истории СВО в 360&ordm;</a>
+                    <div class="z-0 nav-drop l:left-[-100px] xl:left-[-75px] xxl:left-[-104px]">
+                        <a href="#" class="link-nav link-size-last">Юридическая информация</a>
+                        <a href="#" class="link-nav link-size-last">О нас в СМИ</a>
+                        <a href="#" class="link-nav link-size-last">Отзывы</a>
+                        <a href="#" class="link-nav link-size-last">Партнеры музея истории СВО</a>
+                        <a href="#" class="link-nav link-size-last">Проекты</a>
+                        <a href="#" class="link-nav link-size-last">Пресс-служба</a>
+                        <a href="#" class="link-nav link-size-last">Вакансии</a>
+                        <a href="#" class="link-nav link-size-last">Филиалы</a>
+                        <a href="#" class="link-nav link-size-last">Контакты</a>
+                        <a href="#" class="link-nav link-size-last">Написать руководителю музея</a>
+                        <a href="#" class="link-nav link-size-last">Музей истории СВО в 360&ordm;</a>
                     </div>
                 </li>
             </ul>
         </div> 
     </header>
-    <main>
-        <div class="container-hero bg-[url(image/bg.png)] bg-cover min-h-[980px]">
-            <div class="hero-main bg-[#807552B2] pl-[32px] pt-[48px] pr-[17px] text-white"> 
+    <main class="flex flex-col justify-center min-w-[320px] overflow-hidden">
+        <section>
+        <div class="container-hero min-h-[600px] pt-[200px] translate-y-[143px] xs:pt-[289px] xs:min-h-[814px] m:pl-[34px] l:translate-y-[98px] l:pl-0 l:pt-0 l:min-h-[700px] xl:min-h-[900px] xxl:min-h-[980px] bg-[url(image/M-bg.png)] l:bg-[url(image/bg.png)] bg-cover">
+            <div class="hero-main text-white bg-[#807552B2] z-2 relative pr-[20px] pl-[17px] m:w-[510px] l:w-[488px] l:translate-y-[240px] l:pl-[22px] l:pr-[17px] l:translate-x-[90px] xl:translate-y-[254px] xl:pl-[32px] xl:pr-[17px] xl:translate-x-[160px] xxl:translate-x-[162px] xl:min-w-[740px] xxl:translate-y-[375px] xxl:w-[837px]">
                 <p class="hero-title">Музей СВО</p>
-                <div class="block_hero-text">
-                    <p class="hero-text">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p> 
-                    <p class="hero-text w-[783px]">Задача — сохранить память о саратовцах-участниках СВО.
-                    Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
+                <div class="block-hero-text xs:w-[397px]">
+                    <p class="hero-text hero-text-size">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p> 
+                    <p class="hero-text hero-text-size">Задача — сохранить память о саратовцах-участниках СВО.</p>
+                    <p class="hero-text hero-text-size">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
                 </div>
             </div>
         </div>
-        <div class="container2 flex pt-[203px] text-[#1C1B17] pr-[159px] max-h-[778px]">
-            <div class="text_container  pl-[162px] relative">
-                <div class="hero-main2">
+        </section>
+        <section class="container2 flex flex-col items-center pt-[188px] gap-[40px] xs:pt-[208px] m:pt-[240px] l:pt-[153px] l:flex l:flex-row text-[#1C1B17] l:justify-evenly l:pb-[100px] xxl:pb-[252px] xl:justify-center xxl:pr-[109px] relative">
+                <div class="hero-main relative xs:pr-[47px] s:pr-0 xl:pr-[75px] xxl:pr-[30px] xxl:pl-[130px]">
                     <p class="hero-title">Музей СВО</p>
-                    <div class="block_hero-text">
+                    <div class="block_hero-text max-w-[280px] xs:max-w-[360px] s:max-w-[400px] m:max-w-[457px] l:max-w-[391px] xl:max-w-[540px] xxl:max-w-[783px]">
                         <p class="hero-text">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
-                        <p class="hero-text">Задача — сохранить память о саратовцах-участниках СВО. 
-                        Музей является филиалом саратовского Исторического<br> парка «Россия — Моя история».</p> 
+                        <p class="hero-text">Задача — сохранить память о саратовцах-участниках СВО.</p> 
+                        <p class="hero-text">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
                     </div>
+                    <img src="image/Group 191.png" class="img absolute rotate-90 -scale-y-100 max-h-[200px] top-[29px] right-[-126px] xs:w-[403px] xs:top-[39px] xs:right-[-157px] s:top-[36px] s:right-[-199px] m:min-w-[600px] m:min-h-[337px] m:top-[29px] m:right-[-291px] l:min-w-[500px] l:min-h-[280px] l:rotate-0 l:scale-none l:top-[44px] l:left-[-113px] xl:left-[-112px] xl:top-[124px] xxl:top-[155px] xxl:min-w-[738px] xxl:left-[-28px] xxl:min-h-[406px]">
                 </div>                
-                <img src="image/Group 191.png" class="image absolute left-[0px] top-[108px]">
-            </div>
-            <div class="blocki flex flex-row gap-[20px] pb-[250px] pt-[34px] ">
-                <div class="block1 relative max-h-[290px]">
-                    <a href="#" class="link-block grid relative overflow-hidden min-w-[465px]">
-                        <img src="image/img1.png" class="block-image z-1">
-                        <div class="text_block-left pl-[12px]">
-                            <span class="text_block-title font-[Conthrax] text-[58px] pb-[35px]">Выставки</span>
-                            <p class="text_block-regular font-[DinproRegular] text-[18px] ">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
+            <div class="blocki flex items-end justify-center gap-[10px] xs:gap-[21px] xxl:gap-[20px] l:justify-between l:w-[445px] xl:w-[610px] xxl:justify-center xxl:w-[788px]">
+                <div class="block1 relative l:max-h-[250px] xxl:max-h-[290px]">
+                    <a href="#" class="link-block grid relative max-w-[140px] xs:max-w-[193px] xs:min-h-[286px] m:max-w-[255px] m:min-h-[320px] l:max-w-[256px] l:min-h-[160px] xl:min-w-[355px] xl:min-h-[222px] xxl:min-w-[465px] xxl:min-h-[288px]">
+                        <img src="image/img1.png" alt="#" class="block-image z-1 hidden  l:grid object-cover h-full w-full">
+                        <img src="image/M-bg.png" alt="#" class="block-image grid object-cover w-full h-full l:hidden">
+                        <div class="text_block-left min-h-[200px] pb-[10px] pl-[10px] xs:pb-[21px] l:pl-[10px] l:min-h-[170px] l:pb-[7px] xl:pb-[12px] xl:pl-[12px] xxl:pb-[35px]"> 
+                            <span class="link-block-title">Выставки</span>
+                            <p class="link-block-text">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
                         </div>
-                        <div class="gradient-block-left z-2 w-full h-full"></div>
+                        <div class="gradient-block-left hidden l:block z-2 w-full h-full"></div>
+                        <div class="gradient-mob-link l:hidden"></div>
                     </a>
-                    <div class="arrow">
-                        <img src="image/Vector 15.png" class="absolute top-[25px] left-[10px]">
-                    </div>
-                    <div class="vector1 ">
-                        <img src="image/Group 190.png" class="absolute top-[-57px] left-[-83px]">
-                    </div>
-                    <div class="vector2">
-                        <img src="image/Group 189.png" class="absolute bottom-[-41px] right-[-38px] z-1">
-                    </div>
+                    <img src="image/Group 193.png" class="absolute w-[37px] top-[-24px] right-[-24px] xs:w-[65px] xs:top-[-43px] xs:right-[-42px] l:hidden">
+                    <img src="image/Vector 15.png" class="absolute z-1 top-[18px] left-[10px] xs:left-[19px] w-[15px] xs:w-[20px] xxl:w-[26px] xxl:top-[25px] xxl:left-[10px]">
+                    <img src="image/Group 190.png" class="hidden l:block l:absolute l:w-[90px] l:top-[-35px] l:left-[-51px] xl:w-[100px] xl:top-[-38px] xl:left-[-57px] xxl:top-[-57px] xxl:left-[-83px] xxl:w-[146px]">
+                    <img src="image/Group 189.png" class="z-1 absolute w-[44px] right-[-165px] bottom-[-17px] xs:right-[-217px] xs:bottom-[-17px] l:w-[90px] l:right-[-31px] l:bottom-[-33px] xxl:w-[108px] xxl:right-[-38px] xxl:bottom-[-41px]">
                 </div>
                 <div class="block relative">
-                    <a href="#" class="link-block grid relative overflow-hidden">
-                        <img src="image/img2.png" class="block-image min-h-[290px] min-w-[303px]">
-                        <div class="text_block-right pl-[12px]">
-                            <span class="text_block-title font-[Conthrax] text-[58px]">О нас</span>
-                            <p class="text_block-regular font-[DinproRegular] text-[18px] pr-[60px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
+                    <a href="#" class="link-block grid relative overflow-hidden max-w-[140px] xs:max-w-[181px] xs:min-h-[205px] l:max-w-[178px] l:min-h-[160px] xl:min-h-[215px] xl:max-w-[225px] xxl:min-h-[290px] xxl:min-w-[303px]">
+                        <img src="image/img2.png" alt="#" class="block-image hidden l:grid l:object-cover">
+                        <img src="image/M-bg.png" alt="#" class="block-image grid object-cover w-full h-full l:hidden">
+                        <div class="text_block-right min-h-[160px] pl-[12px] pt-[6px]">
+                            <span class="link-block-title">О нас</span>
+                            <p class="link-block-text l:pr-[60px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
                         </div>
-                        <div  class="gradient-block-right"></div>
+                        <div class="gradient-block-right hidden l:block"></div>
+                        <div class="gradient-mob-link2"></div>
                     </a>
-                    <img src="image/Vector 15.png" class="absolute bottom-[25px] right-[15px]">
-                    <img src="image/Group 188.png" class="absolute right-[-73px] bottom-[11px]">
+                    <img src="image/Group 193.png" class="absolute rotate-270 w-[31px] top-[-34px] left-[-7px] xs:top-[-33px] l:hidden">
+                    <img src="image/Vector 15.png" class="absolute z-2 w-[15px] bottom-[16px] left-[16px] xs:w-[20px] xs:bottom-[64px] l:left-[142px] xxl:bottom-[25px] xxl:right-[15px] xxl:w-[26px] xxl:h-[26px]">
+                    <img src="image/Group 188.png" class="absolute rotate-90 w-[30px] left-[-140px] bottom-[-36px] xs:w-[39px] xs:left-[-264px] xs:bottom-[-47px] l:rotate-0 l:left-[169px] l:w-[49px] xl:w-[60px] l:bottom-[5px] xl:left-[220px] xxl:left-[295px] xxl:bottom-[11px] xxl:w-[79px]">
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="container_top flex justify-between gap-[50px] pb-[106px]">
-                <div class="container_top-title">
-                    <p class="hero-title-line">Выставки</p>
+        </section>
+        <section class="container_top flex flex-col">
+                <div class="flex flex-row justify-center pr-[18px] gap-[10px] xs:gap-[20px] pl-[17px] pt-[100px] m:pr-0 m:pl-0 xs:pt-[126px] l:pt-0 l:gap-0 xl:gap-[50px] l:pb-[94px] xxl:pl-[162px] xxl:pr-[162px]">
+                <div class="l:flex l:flex-row l:w-full xl:w-[1473px] xxl:w-[1600px] l:justify-evenly xxl:justify-between gap-[50px] l:gap-[40px] xxl:gap-[20px]">
+                    <div class="flex flex-col gap-[22px] xl:gap-[30px] xxl:gap-[42px]">
+                        <p class="hero-title">Выставки</p>
+                        <div class="line-grad hidden l:flex l:w-[356px] l:h-[32px] xxl:w-[626px] xxl:h-[60px]"></div>
+                    </div>
+                    <div class="container_top-text max-w-[302px] m:max-w-[420px] l:max-w-[440px] xl:max-w-[650px] xxl:max-w-[950px] pt-[20px]">
+                        <p class="hero-text">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.
+                        <p class="hero-text">Задача — сохранить память о саратовцах-участниках СВО.</p>
+                        <p class="hero-text">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
+                    </div>
                 </div>
-                <div class="container_top-text pt-[20px]">
-                    <p class="hero-text w-[950px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.
-                    <p class="hero-text w-[950px]">Задача — сохранить память о саратовцах-участниках СВО.</p>
-                    <p class="hero-text w-[950px]">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
+                <div class="line-grad-xs flex l:hidden"></div>
                 </div>
+                <div class="all-cards">
+                    <div class="cards">
+                        <a href="#" class="excursion">
+                            <img src="image/img3.png" class="img-ex">
+                            <div class="text-ex">
+                                <p class="excursion-title">Экскурсия 1</p>
+                                <p class="excursion-text">с 9.00 до 9.00</p>
+                                <p class="excursion-text">1 января — 1 января</p>
+                            </div>
+                        </a>
+                        <a href="#" class="excursion">
+                            <img src="image/img3.png" class="img-ex">
+                            <div class="text-ex">
+                                <p class="excursion-title">Экскурсия 1</p>
+                                <p class="excursion-text">с 9.00 до 9.00</p>
+                                <p class="excursion-text">1 января — 1 января</p>
+                            </div>
+                        </a>
+                        <a href="#" class="excursion">
+                            <img src="image/img3.png" class="img-ex">
+                            <div class="text-ex">
+                                <p class="excursion-title">Экскурсия 1</p>
+                                <p class="excursion-text">с 9.00 до 9.00</p>
+                                <p class="excursion-text">1 января — 1 января</p>
+                            </div>
+                        </a>
+                    </div>
+                <button class="button_1">смотреть все</button>
             </div>
-            <div class="all-cards flex flex-col items-center pl-[162px]  pr-[144px]">
-                <div class="cards flex gap-[85px] pb-[94px] ">
+        </section>
+        <section class="container-top flex items-center flex-col pt-[81px] xxl:pt-[111px] l:pl-0">
+            <div class="container_top-title flex flex-col-reverse xs:pl-[17px] m:pr-[157px] xs:pr-[80px] pb-[47px] l:pl-[120px] l:pr-[120px] xxl:pr-[155px] xxl:pl-[162px] l:flex-row l:gap-[50px] l:pb-[110px] relative">
+                <div class="pt-[15px] xs:pt-[18px] max-w-[278px] xs:max-w-[300px] l:max-w-[495px] xl:max-w-[670px] xxl:max-w-[912px]">
+                    <p class="hero-text l:text-right">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
+                    <p class="hero-text l:text-right">Задача — сохранить память о саратовцах-участниках СВО.</p>
+                    <p class="hero-text l:text-right">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
+                </div>
+                <p class="hero-title">Экскурсии</p>
+                <img src="image/Vector 17.png" class="absolute right-[-147px] top-[58px] xs:top-[76px] xs:right-[-111px] rotate-270 l:rotate-0 w-[314px] l:w-[400px] l:top-[60px] l:right-[144px] xl:right-[108px] xl:top-[70px] xl:w-[600px] xxl:top-[112px] xxl:right-[144px]">
+            </div>
+            <div class="all-cards">
+                <div class="cards">
                     <a href="#" class="excursion">
-                        <div class="excursion_img">
-                            <img src="image/img3.png" class="img_ex">
-                        </div>
+                        <img src="image/img3.png" class="img-ex">
                         <div class="text-ex">
-                            <p class="excursion_text">Экскурсия 1</p>
-                            <p class="excursiom_text-mini">с 9.00 до 9.00</p>
-                            <p class="excursiom_text-mini">1 января — 1 января</p>
+                            <p class="excursion-title">Экскурсия 1</p>
+                            <p class="excursion-text">с 9.00 до 9.00</p>
+                            <p class="excursion-text">1 января — 1 января</p>
                         </div>
                     </a>
                     <a href="#" class="excursion">
-                        <div class="excursion_img">
-                            <img src="image/img3.png" class="img_ex">
-                        </div>
+                        <img src="image/img3.png" class="img-ex">
                         <div class="text-ex">
-                            <p class="excursion_text">Экскурсия 1</p>
-                            <p class="excursiom_text-mini">с 9.00 до 9.00</p>
-                            <p class="excursiom_text-mini">1 января — 1 января</p>
+                            <p class="excursion-title">Экскурсия 1</p>
+                            <p class="excursion-text">с 9.00 до 9.00</p>
+                            <p class="excursion-text">1 января — 1 января</p>
                         </div>
                     </a>
                     <a href="#" class="excursion">
-                        <div class="excursion_img">
-                            <img src="image/img3.png" class="img_ex">
-                        </div>
+                        <img src="image/img3.png" class="img-ex">
                         <div class="text-ex">
-                            <p class="excursion_text">Экскурсия 1</p>
-                            <p class="excursiom_text-mini">с 9.00 до 9.00</p>
-                            <p class="excursiom_text-mini">1 января — 1 января</p>
+                            <p class="excursion-title">Экскурсия 1</p>
+                            <p class="excursion-text">с 9.00 до 9.00</p>
+                            <p class="excursion-text">1 января — 1 января</p>
                         </div>
                     </a>
                 </div>
                 <button class="button_1">смотреть все</button>
             </div>
-            </div>
-            <div class="container_top  pt-[111px] pr-[155px] pl-[162px] flex flex-col items-center">
-                <div class="container_top-title flex flex-row gap-[50px] pb-[110px] relative">
-                    <div class="">
-                        <p class="hero-text max-w-[912px] text-right pt-[15px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
-                        <p class="hero-text max-w-[912px] text-right">Задача — сохранить память о саратовцах-участниках СВО.</p>
-                        <p class="hero-text max-w-[912px] text-right">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
-                    </div>
-                    <p class="hero-title">Экскурсии</p>
-                    <img src="image/Vector 17.png" class="absolute top-[95px] right-[-16px]">
-                </div>
-                <div class="cards flex gap-[85px] pb-[94px]">
-                    <a href="#" class="excursion">
-                        <div class="excursion_img">
-                            <img src="image/img3.png" class="img_ex">
-                        </div>
-                        <div class="text-ex">
-                            <p class="excursion_text">Экскурсия 1</p>
-                            <p class="excursiom_text-mini">с 9.00 до 9.00</p>
-                            <p class="excursiom_text-mini">1 января — 1 января</p>
-                        </div>
-                    </a>
-                    <a href="#" class="excursion">
-                        <div class="excursion_img">
-                            <img src="image/img3.png" class="img_ex">
-                        </div>
-                        <div class="text-ex">
-                            <p class="excursion_text">Экскурсия 1</p>
-                            <p class="excursiom_text-mini">с 9.00 до 9.00</p>
-                            <p class="excursiom_text-mini">1 января — 1 января</p>
-                        </div>
-                    </a>
-                    <a href="#" class="excursion">
-                        <div class="excursion_img">
-                            <img src="image/img3.png" class="img_ex">
-                        </div>
-                        <div class="text-ex">
-                            <p class="excursion_text">Экскурсия 1</p>
-                            <p class="excursiom_text-mini">с 9.00 до 9.00</p>
-                            <p class="excursiom_text-mini">1 января — 1 января</p>
-                        </div>
-                    </a>
-                </div>
-            <button class="button_1">смотреть все</button>
-        </div>  
-        <div class="section pt-[131px] pl-[162px] pr-[148px] flex gap-[55px]">
-            <div class="hero-main3 gap-[55px] relative">
-                <p class="hero-title1 text-[70px]">Посетителям</p>
-                <div class="block_hero-text">
+        </section>
+        <section class="section flex flex-col flex-wrap justify-center content-center pt-[81px] l:flex-row l:pl-0 l:justify-evenly xxl:flex-nowrap xxl:pt-[131px] xxl:pl-[162px] xxl:pr-[148px] xxl:gap-[55px] xxl:justify-center">
+            <div class="main-block-text justify-center h-[100px] xs:gap-[20px] xxl:gap-8">
+                <p class="title-small">Посетителям</p>
+                <div class="block_hero-text w-[270px] xs:w-[403px] l:w-[416px] xl:w-[555px] xxl:w-[783px]">
                     <p class="hero-text">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
                     <p class="hero-text">Задача — сохранить память о саратовцах-участниках СВО.</p>
                     <p class="hero-text">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p> 
                 </div>
-                <img src="image/Group 191.png" class="vector absolute bottom-[-124px] left-[-161px]">
+                <img src="image/Group 191.png" class="vector absolute bottom-[-330px] left-[-52px] xs:bottom-[-343px] max-w-[230px] l:max-w-[341px] l:left-[-77px] l:bottom-[-180px] xl:left-[-120px] xl:bottom-[-280px] xl:max-w-[480px] xxl:max-w-[738px] xxl:bottom-[-440px] xxl:left-[-161px]">
             </div>   
-            <div class="contn flex flex-col gap-[27px] relative pt-[12px] pb-[85px]">
+            <div class="contn flex flex-col pb-[26px] pt-[91px] max-w-[403px] gap-[20px] xs:gap-[30px] l:gap-[17px] xxl:gap-[27px] xl:max-w-[720px] xxl:max-w-[788px] relative l:pt-[12px] l:pb-[40px] xxl:pb-[85px]">
                 <div class="top_img">
-                    <a href="#" class="link grid">
-                        <img src="image/topImage.png" class="block-image max-w-[788px]">
-                        <span class="text_block-right font-[Conthrax] text-[58px] pl-[11px] pt-[12px]">События</span> 
-                        <div class="gradient-block3"></div>
+                    <a href="#" class="link grid max-w-[270px] xs:max-w-[404px] xs:max-h-[63px] l:max-h-[66px] xl:max-w-[574px] xl:max-h-[90px] xxl:max-h-[126px] xxl:max-w-[788px]">
+                        <img src="image/topImage.png" class="hidden max-w-[404px] xl:max-w-[574px] xxl:max-w-[788px] l:block object-cover block-image">
+                        <img src="image/img7.png" class="block-image w-[403px] h-[63px] object-cover l:hidden">
+                        <span class="text_block-right font-[Conthrax] text-[23px] xs:text-[30px] flex pl-[5px] items-center l:pl-[8px] xl:text-[35px] xxl:text-[58px] xxl:pl-[11px]">События</span> 
+                        <div class="gradient-block3 hidden l:block"></div>
+                        <div class="gradient-blockM3 l:hidden"></div>
                     </a>
-                    <img src="image/Vector 18.png" class="absolute top-[-64px] right-[-7px]">
-                    <img src="image/Vector 15.png" class="absolute top-[60px] right-[37px]">
+                    <img src="image/Vector 18.png" class="absolute w-[60px] top-[68px] right-[-2px] xs:top-[49px] xs:w-[110px] xl:w-[140px] xs:right-[-4px] l:top-[-30px] xl:top-[-41px] xxl:w-[197px] xxl:top-[-64px] xxl:right-[-7px]">
+                    <img src="image/Vector 15.png" class="absolute z-1 w-[14px] top-[116px] right-[37px] xl:w-[20px] xxl:w-[26px] l:top-10 xl:top-[60px]">
                 </div>
-                <div class="bott_img flex gap-[25px]">
-                    <a href="#" class="link grid">
-                        <img src="image/leftImage.png" class="block-image min-h-[199px]">
-                        <div class="text_block-left flex flex-col-reverse pl-[14px] max-w-[418px]">
-                            <span class="text_block font-[Conthrax] text-[58px]">Новости</span>
-                            <p class="text_block-regular font-[DinproRegular] text-[18px] max-w-[429px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
+                <div class="bott_img flex gap-[10px] xs:gap-[38px] l:gap-[13px] xxl:gap-[25px]">
+                    <a href="#" class="link grid max-w-[130px] max-h-[92px] xs:max-w-[192px] l:max-w-[220px] xl:max-w-[292px] xl:max-h-[155px] xxl:max-w-[418px] l:max-h-[105px] xxl:max-h-[199px]">
+                        <img src="image/leftImage.png" class="hidden object-cover l:block block-image l:h-[106px] xl:h-[155px] xxl:h-[199px]">
+                        <img src="image/img7.png" class="block-image w-[130px] xs:w-[192px] h-[92px] object-cover l:hidden">
+                        <div class="text_block-left flex flex-col-reverse pl-[8px] l:pr-[15px] pt-[30px] xl:pt-0 xxl:pl-[14px] max-w-[418px]">
+                            <span class="text_block font-[Conthrax] text-[20px] xs:text-[26px] xl:text-[30px] xxl:text-[58px]/[1.1] pt-[12px] xxl:pt-[12px]">Новости</span>
+                            <p class="text_block-regular font-[DinproRegular] text-[8px] l:text-[10px] xxl:text-[18px] l:max-w-[350px] xxl:max-w-[429px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
                         </div>
-                        <div class="gradient-block4"></div>
+                        <div class="gradient-block4 hidden l:block"></div>
+                        <div class="gradient-blockM4 l:hidden"></div>
                     </a>
-                    <img src="image/Vector 15.png" class="absolute top-[183px] left-[9px]">
-                    <img src="image/Group 192.png" class="absolute top-[103px] left-[-81px]">
-                    <a href="#" class="link grid">
-                        <img src="image/rightImage.png" class="block-image min-w-[345px]">
-                        <span class="text_block-left font-[Conthrax] text-[58px] pb-[22px] pl-[16px]">Афиша</span>
-                    <div class="gradient-block5"></div>
+                    <img src="image/Vector 15.png" class="absolute w-[14px] top-[185px] xs:top-[193px] left-[25px] xs:left-[6px] xl:w-[20px] l:left-[10px] l:top-[106px] xl:top-[130px] xxl:w-[26px] xxl:top-[183px] xxl:left-[9px]">
+                    <img src="image/Group 192.png" class="absolute w-[27px] bottom-[76px] left-[-24px] xs:-scale-x-100 xs:w-[33px] xs:top-[164px] xs:left-[188px] l:scale-none l:w-[48px] l:top-[65px] l:left-[-42px] xl:top-[85px] xl:w-[60px] xl:left-[-54px] xxl:w-[92px] xxl:top-[103px] xxl:left-[-81px]">
+                    <a href="#" class="link grid max-w-[123px] xs:max-w-[158px] xs:max-h-[92px] l:max-w-[185px] l:max-h-[166px] xl:max-w-[270px] xxl:max-w-[345px] xxl:max-h-[199px]">
+                        <img src="image/rightImage.png" class="hidden l:block block-image l:min-w-[185px] xxl:min-w-[345px]">
+                        <img src="image/img7.png" class="block-image w-[158px] h-[92px] object-cover l:hidden">
+                        <span class="text_block-left font-[Conthrax] text-[20px] pb-[5px] pl-[8px] xs:text-[26px] xxl:text-[58px] xxl:pl-[11px] xl:pb-[22px] xxl:pt-[12px]">Афиша</span>
+                        <div class="gradient-blockM5 l:hidden"></div>
                     </a>
-                    <img src="image/Vector 16.png" class="absolute top-[120px] right-[-89px]">
-                    <img src="image/Vector 15.png" class="absolute top-[188px] right-[300px]">
+                    <img src="image/Vector 16.png" class="absolute w-[52px] top-[161px] right-[-18px] xs:w-[65px] xs:top-[169px] xs:right-[-17px] l:w-20 l:right-[-41px] l:top-[76px] xl:w-23 xl:top-[96px] xl:right-[-45px] xxl:w-[174px] xxl:top-[120px] xxl:right-[-89px]">
+                    <img src="image/Vector 15.png" class="absolute w-[14px] top-[185px] right-[106px] xs:top-[195px] xs:right-[150px] xl:w-[20px] l:right-[158px] xl:right-[235px] l:top-[106px] xl:top-[130px] xxl:w-[26px] xxl:top-[188px] xxl:right-[300px]">
                 </div>
             </div>
-        </div>  
-        <img src="image/photo.png" class="pb-[135px]">
-        <div class="section-form col items-center gap-[61px] pl-[16px]">
-            <div class="heading flex flex-col items-center gap-[54px]">
-                <p class="hero-title1">Вопрос-ответ</p>
+        </section>  
+        <img src="image/photo.png" class="hidden pb-[60px] l:block xl:pb-[80px] xxl:pb-[135px] w-full object-cover">
+        <img src="image/img7.png" class="w-full object-cover pb-[60px] xs:max-h-[352px] xs:pb-[77px] l:hidden">
+        <div class="section-form col items-center gap-[20px] xs:gap-[28px] xl:gap-[55px] xxl:gap-[61px] xxl:pl-[16px]">
+            <div class="heading flex flex-col items-center gap-[10px] xs:gap-[18px] xxl:gap-[54px]">
+                <p class="title-small">Вопрос-ответ</p>
                 <p class="hero-text">Интересует какая-то информация? Задайте нам вопрос!</p>
             </div>
-            <div class="form col min-w-[788px] gap-[34px] relative">
+            <div class="form col max-w-[290px] xs:max-w-[362px] s:max-w-[355px] m:max-w-[500px] xl:max-w-[712px] xxl:min-w-[788px] gap-[17px] xxl:gap-[34px] relative">
                 <input type="text" name="#" class="input" placeholder="Имя">
-                <img src="image/Group 194.png" class="absolute right-[-103px] top-[7px]">
+                <img src="image/Group 194.png" class="absolute w-[63px] top-[10px] right-[-36px] xs:w-[81px] xs:top-[2px] xs:right-[-46px] m:w-[88px] m:right-[-50px] m:top-[8px] xl:top-[26px] xxl:right-[-103px] xxl:top-[7px] xxl:w-[178px]">
                 <input type="text" name="#" class="input" placeholder="Телефон">
                 <input type="email" name="#" class="input" placeholder="e-mail">
-                <textarea cols="40" name="#" class="textarea pt-[20px]" placeholder="Ваш вопрос" rows="6"></textarea>
-                <div class="container_button-form flex gap-[48px] pt-[32px] pb-[127px]">
+                <textarea cols="40" name="#" class="textarea pt-[11px] xxl:pt-[20px]" placeholder="Ваш вопрос" rows="6"></textarea>
+                <div class="container_button-form flex gap-[48px] pt-[18px] pb-[90px] xl:pb-[112px] xxl:pt-[32px] xxl:pb-[127px]">
                     <input type="reset" name="#" class="button-form-reset" value="отчистить">
                     <input type="submit" name="#" class="button-form-submit bg-[#BCB679]" value="отправить">
                 </div>
-                <img src="image/Group 195.png" class="absolute bottom-[403px] left-[-130px]">
-                <img src="image/Group 188.png" class="absolute bottom-[287px] right-[-72px]"> 
+                <img src="image/Group 195.png" class="absolute w-[58px] bottom-[211px] left-[-55px] xs:w-[59px] xs:bottom-[235px] xs:left-[-56px] m:bottom-[250px] m:left-[-77px] m:w-[80px] xxl:w-[135px] xxl:bottom-[403px] xxl:left-[-130px]">
+                <img src="image/Group 188.png" class="absolute w-[33px] right-[-29px] bottom-[166px] xs:w-[33px] xs:bottom-[193px] xs:right-[-29px] m:w-[49px] m:bottom-[200px] m:right-[-44px] xxl:w-[79px] xxl:bottom-[287px] xxl:right-[-72px]"> 
             </div>
         </div>
-        <img src="image/photo2.png">
-        <div class="teachers flex flex-row pt-[103px] pl-[162px] pb-[200px] gap-[26px]">
-            <div class="hero-main3 relative w-[783px] gap-[44px]">
-                <div class="box-title-shadow flex flex-row gap-[29px] items-end">
-                    <a href="#" class="hero-title1 text-[70px] hero-title-shadow">Учителям</a>
-                    <a href="#"><img src="image/Vector 15.png" class="w-[47px] h-[48px]"></a>
+        <img src="image/photo2.png" class="hidden l:block w-full object-cover">
+        <img src="image/img6.png" class="max-h-[354px] w-full object-cover l:hidden">
+        <section class="teachers flex flex-col l:flex-row items-center justify-center gap-[26px] pb-[150px] xxl:pt-[103px] l:pt-[50px] l:pb-[130px] l:justify-center xxl:pb-[200px] l:gap-[30px] xxl:gap-[80px] xl:gap-[60px]">
+            <div class="hero-main relative l:gap-[30px] l:max-w-[476px] xl:max-w-[660px] xxl:max-w-[783px] xxl:gap-[44px]">
+                <div class="box-title-shadow flex flex-row gap-[29px] items-baseline">
+                    <a href="#" class="title-small text-[70px]">Учителям</a>
+                    <a href="#" class="hidden l:block"><img src="image/Vector 15.png" class="l:w-[30px] xl:w-[39px] xxl:w-[47px]"></a>
                 </div>
-                <div class="block-hero-text">
+                <div class="block-hero-text max-w-[287px] xs:max-w-[406px] s:max-w-[438px] m:max-w-[460px] l:max-w-[414px] xl:max-w-[524px] xxl:max-w-[783px]">
                     <p class="hero-text">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
                     <p class="hero-text">Задача — сохранить память о саратовцах-участниках СВО.</p>
                     <p class="hero-text">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p> 
                 </div>
-                <img src="image/Group 191.png" class="vector absolute bottom-[-88px] left-[-161px]">
+                <img src="image/Group 191.png" class="vector absolute w-[260px] bottom-[-276px] left-[-60px] s:bottom-[-326px] s:left-[-81px]  s:w-[302px] l:left-[-106px] l:bottom-[-78px] xl:left-[-125px] xl:bottom-[-127px] xxl:bottom-[-180px] xxl:left-[-161px] l:w-[739px]">
             </div> 
-            <div class="content_img flex flex-col gap-[35px] relative">
+            <div class="content_img flex flex-col gap-[24px] xxl:gap-[35px] relative">
                 <div class="top_img">
-                    <a href="#" class="link grid min-w-[788px]">
-                        <img src="image/img4.png" class="block-image object-cover">
-                        <span class="text_block-right font-[Conthrax] text-[58px] pl-[11px] pt-[13px]">Книга памяти</span> 
+                    <a href="#" class="link grid overflow-hidden max-w-[290px] max-h-[60px] xs:max-w-[379px] s:max-h-[80px] s:max-w-[460px] l:max-w-[480px] l:max-h-[90px] xl:max-w-[650px] xl:max-h-[110px] xxl:max-h-[123px] xxl:max-w-[788px]">
+                        <img src="image/img4.png" class="block-image object-cover hidden l:block">
+                        <img src="image/img7.png" alt="#" class="block-image object-center translate-y-[-33px] l:hidden">
+                        <div class="gradient-M-block-white l:hidden"></div>
+                        <span class="text_block-right font-[Conthrax] text-[23px] pl-[7px] pt-[10px] xs:pt-[7px] xs:text-[28px] s:pt-[15px] l:text-[37px] xl:text-[45px] xxl:text-[58px] l:pl-[10px] l:pt-[10px] xxl:pl-[11px] xxl:pt-[13px]">Книга памяти</span> 
                     </a>
-                    <img src="image/Vector 18.png" class="absolute top-[-75px] right-[-5px]">
-                    <img src="image/Vector 15.png" class="absolute top-[49px] right-[40px]">
-                    <img src="image/Group 195.png" class="absolute top-[-52px] left-[-129px]">
+                    <img src="image/Vector 18.png" class="absolute top-[-22px] right-[-1px] w-[60px] s:w-[110px] s:top-[-42px] l:right-[-4px] l:top-[-45px] l:w-[116px] xl:w-[178px] xl:top-[-68px] xxl:w-[187px] xxl:top-[-72px] xxl:right-[-5px]">
+                    <img src="image/Vector 15.png" class="absolute w-[15px] top-[23px] right-[22px] s:w-[20px] s:right-[33px] s:top-[31px] l:w-[26px] l:top-[34px] l:right-[40px] xxl:top-[53px]">
+                    <img src="image/Group 195.png" class="absolute w-[42px] top-[-17px] left-[-40px] s:top-[-25px] s:left-[-63px] s:w-[66px] l:top-[-29px] l:w-[77px] l:left-[-74px] xl:left-[-96px] xl:top-[-36px] xl:w-[100px] xxl:top-[-47px] xxl:left-[-120px] xxl:w-[125px]">
                 </div>
                 <div class="bottom_img">
-                    <a href="#" class="link grid max-h-[169px] min-w-[788px]">
-                        <img src="image/img5.png" class="block-image">
-                        <span class="text_block-right font-[Conthrax] text-[58px] pl-[11px] pb-[76px] w-[617px]">Земляки-герои РФ</span> 
+                    <a href="#" class="link grid z-1 overflow-hidden max-w-[290px] max-h-[81px] xs:max-w-[380px] s:max-h-[100px] s:max-w-[460px] l:max-w-[480px] l:max-h-[104px] xl:max-w-[650px] xl:max-h-[140px] xxl:max-h-[169px] xxl:min-w-[788px]">
+                        <img src="image/img5.png" class="block-image hidden l:block">
+                        <img src="image/img7.png" alt="#" class="block-image object-center overflow-hidden translate-y-[-48px] xs:translate-y-[-144px] l:hidden">
+                        <div class="gradient-M-block"></div>
+                        <span class="text_block-right font-[Conthrax] text-[23px] pl-[7px] pt-[3px] xs:pt-0 xs:text-[28px] xs:w-[345px] s:pt-[5px] l:text-[37px] l:w-[435px] l:pt-0 xl:text-[45px] xl:w-[568px] xxl:text-[58px] l:pl-[10px]  xxl:pl-[11px] xxl:pb-[76px] xxl:w-[706px]">Земляки-герои РФ</span> 
                     </a>
-                    <img src="image/Vector 15.png" class="absolute bottom-[180px] right-[40px]">
-                    <img src="image/Group 194.png" class="absolute bottom-[29px] right-[-102px]">
+                    <img src="image/Vector 15.png" class="absolute z-2 w-[15px] top-[98px] right-[23px] xs:top-[98px] xs:right-[22px] s:right-[36px] s:top-[126px] s:w-[20px] l:w-[26px] l:right-[40px] l:top-[120px] xl:top-[155px] xxl:top-[194px]">
+                    <img src="image/Group 194.png" class="absolute w-[60px] bottom-[-19px] right-[-34px] s:w-[110px] s:right-[-63px] s:bottom-[-35px] l:w-[111px] l:bottom-[-36px] l:right-[-63px] xl:w-[140px] xl:bottom-[-41px] xl:right-[-81px] xxl:w-[178px] xxl:bottom-[-57px] xxl:right-[-102px]">
                 </div>
             </div>
-        </div>
-        <div class="tabl pl-[162px] pb-[283px]">
-            <p class="hero-title tabl-title pb-[128px] tabl-title relative">Методические рекомендации</p>
-            <div class="flex flex-col gap-[50px] relative">
+        </section>
+        <section class="tabl flex flex-col items-center pb-[83px] xxl:pb-[283px]">
+            <p class="tabl-title font-['Conthrax'] text-[24px] pb-[16px] w-[300px] xs:w-[370px] s:w-[413px] s:text-[32px] m:w-[553px] l:text-[45px] l:pb-[40px] xl:pl-[120px] xl:text-[65px] xxl:pl-[162px] xxl:text-[88px]/[1.1] xxl:pb-[128px] l:w-[926px] xl:w-[1470px] xxl:w-full relative">Методические рекомендации</p>
+            <div class="block_hero-text l:hidden max-w-[285px] xs:max-w-[370px] s:max-w-[413px] m:max-w-[560px] l:max-w-[460px] xl:max-w-[707px] xxl:max-w-[783px]">
+                <p class="hero-text">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
+                <p class="hero-text">Задача — сохранить память о саратовцах-участниках СВО.</p> 
+                <p class="hero-text">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
+            </div>
+            <div class="hidden l:flex flex-col gap-[35px] xl:gap-[50px] items-center relative">
                 <div class="help flex gap-[19px]">
-                    <div class="cell ">
+                    <div class="cell">
                         <p class="num">1</p>
                         <p class="hero-text text-[#7E7451]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
@@ -367,146 +441,213 @@
                         <p class="hero-text text-[#7E7451]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
-                <img src="image/Group 202.png" class="absolute top-[-58px] right-[87px]">
+                <img src="image/Group 202.png" class="absolute hidden xxl:block top-[-58px] right-[-59px]">
             </div>
-        </div>
-        <div class="film pl-[162px] flex flex-col gap-[82px]">
-            <p class="film-title max-w-[1500px] flex flex-col">Документальные фильмы</p>
-            <div class="flex flex-col gap-y-[54px]">
-                <div class="img-film-box grid max-h-[417px] max-w-[1596px]">
-                    <img src="image/img6.png" class="img-film min-h-[417px]">
-                    <div class="film-text pt-[66px]">
-                        <p class="box-film-title">Фильм 1</p>
-                        <p class="hero-text text-[#FFFFFF] max-w-[651px] pb-[41px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        <button class="film-button"><img src="image/Polygon 2.png">смотреть</button>
+            <div class="flex flex-col pt-[16px] gap-[15px] xs:gap-[25px] relative l:hidden">
+                <div class="cell translate-x-[0px] xs:translate-x-[-41px] s:translate-x-[-62px] m:translate-x-[-90px]">
+                    <p class="num">1</p>
+                    <p class="excursion-text text-[#7E7451]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="cell translate-x-[0px] xs:translate-x-[51px] m:translate-x-[85px]">
+                    <p class="num">2</p>
+                    <p class="excursion-text text-[#7E7451]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div> 
+                <div class="cell translate-x-[0px] xs:translate-x-[-41px] s:translate-x-[-62px] m:translate-x-[-90px]">
+                    <p class="num">3</p>
+                    <p class="excursion-text text-[#7E7451]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="cell translate-x-[0px] xs:translate-x-[51px] m:translate-x-[85px]">
+                    <p class="num">4</p>
+                    <p class="excursion-text text-[#7E7451]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <img src="image/Group 202.png" class="absolute top-[-58px] right-[87px] hidden xxl:block">
+            </div>
+        </section>
+        <section class="film gap-[30px] s:gap-0 xxl:pl-[162px] xxl:pr-[155px] flex flex-col xl:gap-[54px]">
+            <div class="grid l:pl-0 l:pr-0 justify-center">
+                <div class="group flex flex-row justify-center gap-[5px] xs:gap-[36px] m:gap-[10px] l:w-[909px] xl:w-[1288px] xxl:w-[1564px]">
+                    <div class="">
+                        <p class="film-title l:text-right">Документальные фильмы</p>
+                        <div class="block_hero-text l:hidden max-w-[242px] xs:max-w-[300px] s:max-w-[360px] m:max-w-[488px] l:max-w-[460px] xl:max-w-[707px] xxl:max-w-[783px]">
+                            <p class="hero-text">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
+                            <p class="hero-text">Задача — сохранить память о саратовцах-участниках СВО.</p> 
+                            <p class="hero-text">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
+                        </div>
+                    </div>
+                    <div class="line-grad-xs flex l:hidden"></div>
+                </div>
+                <div class="grid l:pl-0 l:pr-0 m:content-center max-w-[290px] xs:max-w-[400px] s:max-w-[432px] m:max-w-[550px] l:max-w-full gap-y-[20px] xl:gap-[40px] xxl:gap-y-[54px]">
+                    <div class="img-film-box grid max-h-[106px] s:max-h-[155px] l:max-h-[222px] xl:max-h-[300px] xxl:max-h-[417px]">
+                        <img src="image/img6.png" class="img-film max-h-[104px] s:max-h-[155px] l:max-h-[250px] xl:max-h-[290px] xxl:max-h-[416px]">
+                        <div class="film-text">
+                            <p class="box-film-title text-[27px] s:text-[40px] xl:text-[50px]">Фильм 1</p>
+                            <p class="hero-text hidden l:block text-[#FFFFFF] max-w-[651px] l:pb-[10px] xxl:pb-[41px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <button class="film-button"><img src="image/Polygon 2.png" class="w-[9px] l:w-[20px] xl:w-[24px]">смотреть</button>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between gap-[10px] xl:gap-[20px] pb-[80px] xxl:pb-[180px]">
+                        <div class="img-film-box grid xl:min-w-[500px] xxl:min-w-[626px]">
+                            <img src="image/img6.png" class="img-film max-h-[104px] s:max-h-[200px] l:max-h-[222px] xl:max-h-[272px] xxl:max-h-[318px]">
+                            <div class="film-text pt-[35px] xxl:pt-[144px]">
+                                <p class="box-film-title text-[13px] s:text-[15px] m:text-[25px] l:text-[30px] xxl:text-[50px]">Фильм 2</p>
+                                <button class="film-button"><img src="image/Polygon 2.png" class="w-[9px] l:w-[20px] xl:w-[24px]">смотреть</button>
+                            </div>
+                        </div>
+                        <div class="img-film-box grid xxl:min-w-[465px]">
+                            <img src="image/img6.png" class="img-film max-h-[104px] s:max-h-[200px] l:max-h-[222px] xl:max-h-[272px] xxl:max-h-[318px]">
+                            <div class="film-text pt-[35px] xxl:pt-[144px]">
+                                <p class="box-film-title text-[13px] s:text-[15px] m:text-[25px] l:text-[30px] xxl:text-[50px]">Фильм 3</p>
+                                <button class="film-button "><img src="image/Polygon 2.png" class="w-[9px] l:w-[20px] xl:w-[24px]">смотреть</button>
+                            </div>
+                        </div>
+                        <div class="img-film-box grid xxl:min-w-[465px]">
+                            <img src="image/img6.png" class="img-film max-h-[104px] s:max-h-[200px] l:max-h-[222px] xl:max-h-[272px] xxl:max-h-[318px]">
+                            <div class="film-text pt-[35px] xxl:pt-[144px]">
+                                <p class="box-film-title text-[13px] s:text-[15px] m:text-[25px] l:text-[30px] xxl:text-[50px]">Фильм 4</p>
+                                <button class="film-button"><img src="image/Polygon 2.png" class="w-[9px] l:w-[20px] xl:w-[24px]">смотреть</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="flex flex-row gap-[20px] pb-[180px]">
-                    <div class="img-film-box grid min-w-[626px]">
-                        <img src="image/img6.png" class="img-film max-h-[318px]">
-                        <div class="film-text pt-[144px]">
-                            <p class="box-film-title">Фильм 2</p>
-                            <button class="film-button"><img src="image/Polygon 2.png">смотреть</button>
-                        </div>
+            </div>
+        </section>
+        <section class="flex flex-col items-center">
+            <div class="flex flex-row xs:gap-[10px] l:w-[909px] xl:w-[1288px] xxl:w-[1564px]">
+                <div class="">
+                    <div class="box-title-shadow gallery-text l:gap-[40px] xxl:gap-[60px] flex flex-row items-end relative pb-[25px] xl:pb-[46px] xxl:pb-[72px]">
+                        <a href="#"><p class="hero-title">Галерея</p></a>
+                        <a href="#"><img src="image/Vector 15.png" class="w-[35px] xxl:w-[47px] hidden l:block"></a>
                     </div>
-                    <div class="img-film-box grid min-w-[465px]">
-                        <img src="image/img6.png" class="img-film max-h-[318px]">
-                        <div class="film-text pt-[144px]">
-                            <p class="box-film-title">Фильм 3</p>
-                            <button class="film-button"><img src="image/Polygon 2.png">смотреть</button>
-                        </div>
-                    </div>
-                    <div class="img-film-box grid min-w-[465px]">
-                        <img src="image/img6.png" class="img-film max-h-[318px]">
-                        <div class="film-text pt-[144px]">
-                            <p class="box-film-title">Фильм 4</p>
-                            <button class="film-button"><img src="image/Polygon 2.png">смотреть</button>
-                        </div>
+                    <div class="container_top-text l:hidden max-w-[242px] xs:max-w-[302px] s:max-w-[350px] m:max-w-[488px] l:max-w-[440px] xl:max-w-[650px] xxl:max-w-[950px] pb-[31px]">
+                        <p class="hero-text">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.
+                        <p class="hero-text">Задача — сохранить память о саратовцах-участниках СВО.</p>
+                        <p class="hero-text">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
                     </div>
                 </div>
+                <div class="line-grad-xs flex l:hidden"></div>
             </div>
-        </div>
-        <section class="pl-[162px]">
-            <div class="box-title-shadow gallery-text gap-[238px] flex flex-row items-end relative pb-[72px]">
-                <a href="#"><p class="hero-title">Галерея</p></a>
-                <a href="#"><img src="image/Vector 15.png" class="w-[47px] h-[48px]"></a>
-            </div>
-            <p class="hero-text max-w-[1564px] pb-[60px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="flex flex-col gap-[28px] pb-[172px]">
+            <p class="hero-text hidden l:block l:max-w-[909px] xl:max-w-[1288px] xxl:max-w-[1564px] pb-[40px] xxl:pb-[60px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class=" flex-col gap-[28px] pb-[172px] hidden l:flex l:w-[909px] xl:w-[1288px] xxl:w-[1580px]">
                 <div class="flex flex-row gap-[20px]">
                     <div class="flex flex-row gap-[20px]">
-                        <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box max-w-[465px] min-h-[511px]">
+                        <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box l:max-w-[268px] l:min-h-[344px] xl:max-w-[345px] xl:min-h-[511px] xxl:max-w-[465px] ">
                             <img src="image/img7.png" class="gallery-img">
                         </a>
-                        <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box min-w-[788px] max-h-[511px]">
+                        <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box l:min-w-[264px] l:max-h-[405px] xl:min-w-[582px] xl:max-h-[518px] xxl:min-w-[788px] xxl:max-h-[511px]">
                             <img src="image/img7.png" class="gallery-img">
                         </a>
                     </div>
                     <div class=" flex flex-col gap-[15px]">
-                        <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box min-h-[306px] max-w-[303px]">
+                        <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box l:max-w-[284px] l:min-h-[239px] xl:max-w-[318px] xl:min-h-[313px] xxl:min-h-[306px] xxl:max-w-[303px]">
                             <img src="image/img7.png" class="gallery-img">
                         </a>
-                        <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box max-h-[190px] max-w-[303px]">
+                        <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box l:max-w-[273px] xl:max-w-[302px] l:max-h-[190px] xxl:max-w-[303px]">
                             <img src="image/img7.png" class="gallery-img">
                         </a>
                     </div>
                 </div>
                 <div class="flex flex-row gap-[20px] relative">
-                    <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box max-w-[465px] min-h-[346px]">
+                    <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box xl:max-w-[345px] xl:min-h-[346px] xxl:max-w-[465px]">
                         <img src="image/img7.png" class="gallery-img">
                     </a>
-                    <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box max-w-[303px] min-h-[346px]">
+                    <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box xl:max-w-[318px] xl:min-h-[346px] xxl:max-w-[303px]">
                         <img src="image/img7.png" class="gallery-img">
                     </a>
-                    <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box min-w-[788px] max-h-[346px]">
+                    <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box xl:min-w-[580px] xl:max-h-[346px] xxl:min-w-[788px]">
                         <img src="image/img7.png" class="gallery-img">
                     </a>
-                    <img src="image/Group 191.png" class="img-rotate absolute max-w-[660px]">
+                    <img src="image/Group 191.png" class="img-rotate hidden absolute max-w-[260px] right-[-51px] bottom-[73px] s:right-[-15px] m:max-w-[400px] m:bottom-[29px] m:right-[10px] l:right-[-160px] l:bottom-[-200px] xl:bottom-[-197px] xl:right-[-177px] xxl:right-[-185px] xxl:bottom-[-200px] l:max-w-[660px] xl:max-w-[738px] l:block">
                 </div>
+            </div>
+            <div class="flex flex-row relative justify-center gap-[9px] xs:gap-[19px] m:ga-[30px] pb-[144px] l:hidden">
+                <div class="flex flex-col gap-[15px] xs:gap-[30px]">
+                    <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box object-cover max-w-[193px] max-h-[158px] s:max-w-[206px] m:max-h-[180px] m:max-w-[267px]">
+                        <img src="image/img7.png" class="gallery-img">
+                    </a>
+                    <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box object-cover max-w-[193px] max-h-[74px] m:max-w-[267px] m:max-h-[140px]">
+                        <img src="image/img7.png" class="gallery-img">
+                    </a>
+                </div>
+                <div class="flex flex-col gap-[9px] xs:gap-[23px] m:gap-[30px]">
+                    <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box object-cover max-w-[193px] max-h-[81px] m:max-w-[267px] m:max-h-[140px]">
+                        <img src="image/img7.png" class="gallery-img">
+                    </a>
+                    <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box object-cover max-w-[193px] max-h-[161px] m:max-w-[267px] m:max-h-[180px]">
+                        <img src="image/img7.png" class="gallery-img">
+                    </a>
+                </div>
+                <img src="image/Group 191.png" class="img-rotate absolute max-w-[260px] right-[-51px] bottom-[73px] s:right-[-47px] m:max-w-[400px] m:bottom-[29px] m:right-[-76px] l:hidden">
             </div>
         </section>
         <section>
-            <img src="image/img8.png">
-            <div class="flex flex-row gap-[30px] pr-[148px] pl-[162px] pb-[238px] pt-[78px]">
-                <div>
-                    <div class="box-title-shadow flex flex-row gap-[252px] items-end pb-[50px]">
-                        <a href="#"><p class="hero-title hero-title-shadow">О нас</p></a>
-                        <a href="#"><img src="image/Vector 15.png" class="w-[47px] h-[48px]"></a>
-                    </div>
-                    <div class="block-hero-text max-w-[953px]">
-                        <p class="hero-text">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
-                        <p class="hero-text">Задача — сохранить память о саратовцах-участниках СВО.</p>
-                        <p class="hero-text">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p> 
+            <img alt="#" src="image/img8.png" class="w-full hidden l:block">
+            <img src="image/img6.png" alt="#" class="l:hidden object-cover w-full max-h-[354px]">
+            <div class="flex flex-col justify-center gap-[38px] pt-[28px] pb-[110px] l:flex-row l:pb-[100px] xl:gap-[80px] xxl:gap-[30px] xxl:pr-[148px] xxl:pl-[162px] xxl:pb-[238px] xxl:pt-[78px]">
+                <div class="flex flex-col items-center l:items-start">
+                    <div class="box-title-shadow flex flex-row gap-[150px] xs:gap-[209px] m:gap-[330px] l:gap-[100px] xl:gap-[150px] xxl:gap-[286px] items-baseline pb-[13px] xxl:pb-[50px]">
+                        <a href="#"><p class="hero-title">О нас</p></a>
+                        <a href="#"><img src="image/Vector 15.png" class="hidden l:block w-[22px] xl:w-[33px] xxl:w-[47px]">
+                        <img src="image/Vector 19.png" class="l:hidden w-[20px]">
+                        </a>
+                    </div> 
+                    <div class="hero-text max-w-[294px] xs:max-w-[400px] m:max-w-[525px] l:max-w-[400px] xl:max-w-[572px] xxl:max-w-[953px]">
+                        <p>Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
+                        <p>Задача — сохранить память о саратовцах-участниках СВО.</p>
+                        <p>Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p> 
                     </div>
                 </div>
-                <div class="pt-[36px] flex flex-row gap-[27px]">
-                    <a href="#" class="link grid">
-                        <img src="image/img9.png" class="block-image max-w-[404px] min-h-[276px] object-cover">
-                        <div class="text_block-left max-w-[404px] max-h-[276px] pb-[32px] pl-[15px] pr-[25px] relative">
-                            <span class="text_block-title font-[Conthrax] text-[56px]">Филиалы</span>
-                            <p class="text_block-regular font-[DinproRegular] text-[18px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
-                            <img src="image/Vector 15.png" class="absolute top-[27px] right-[39px]">
-                            <div class="gradient-block5"></div>
+                <div class="gap-[12px] xs:gap-[26px] flex flex-row justify-center xl:gap-[45px] l:gap-[27px] l:pt-[18px] xxl:pt-[44px]">
+                    <a href="#" class="link grid max-w-[150px] max-h-[130px] xs:max-w-[213px] xs:max-h-[167px] m:max-w-[263px] m:max-h-[234px] l:max-w-[225px] l:max-h-[225px] xl:max-w-[289px] xxl:max-h-[283px] xxl:max-w-[404px]">
+                        <img src="image/img9.png" class="block-image w-full h-full hidden l:block object-cover">
+                        <img src="image/img3.png" class="block-image w-full h-full object-cover l:hidden">
+                        <div class="text_block-left pb-[14px] pl-[5px] xs:pb-[18px] xs:pl-[8px] xxl:pb-[32px] xxl:pl-[15px] xxl:pr-[25px] relative">
+                            <span class="font-[Conthrax] text-[20px] xs:text-[26px] xl:text-[39px] xxl:text-[58px]/[1.1]">Филиалы</span>
+                            <p class="font-[DinproRegular] text-[8px] m:text-[15px] l:text-[11px] xxl:text-[18px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
+                            <img src="image/Vector 15.png" class="absolute w-[15px] top-[17px] right-[10px] xxl:w-[30px] xxl:top-[27px] xxl:right-[39px]">
                         </div>
+                        <div class="gradient-blockM6 l:hidden"></div>
                     </a>
-                    <a href="#" class="link grid">
-                        <img src="image/img10.png" class="block-image max-w-[357px] min-h-[276px] object-cover">
-                        <div class="text_block-right max-w-[357px] relative pt-[15px] pl-[11px]">
-                            <span class="text_block-title font-[Conthrax] text-[56px]">Проекты</span>
-                            <p class="text_block-regular font-[DinproRegular] text-[18px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
-                            <img src="image/Vector 15.png" class="absolute bottom-[29px] left-[8px]">
-                            <div class="gradient-block6"></div>
+                    <a href="#" class="link grid max-w-[130px] max-h-[130px] xs:max-w-[167px] xs:max-h-[171px] m:max-w-[230px] m:max-h-[230px] l:max-w-[173px] l:max-h-[179px] xl:max-w-[257px] xl:max-h-[198px] xxl:max-w-[364px] xxl:max-h-[383px]">
+                        <img src="image/img10.png" class="hidden block-image w-full h-full object-cover l:block">
+                        <img src="image/img3.png" class="block-image w-full h-full object-cover l:hidden">
+                        <div class="text_block-right relative pt-[15px] pl-[4px] pr-[3px] xs:pt-[22px] xl:pt-[10px] xl:pl-[10px] xxl:pt-[15px] xxl:pl-[11px]">
+                            <span class="font-[Conthrax] text-[20px] xs:text-[26px] xl:text-[39px] xxl:text-[58px]/[1.1]">Проекты</span>
+                            <p class="font-[DinproRegular] text-[8px] m:text-[15px] l:text-[11px] xxl:text-[18px]">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.</p>
+                            <img src="image/Vector 15.png" class="absolute w-[15px] xxl:w-[30px] bottom-[22px] right-[10px] xxl:bottom-[29px] xl:left-[10px] xxl:left-[8px]">
                         </div>
+                        <div class="gradient-blockM7 l:hidden"></div>
                     </a>
                 </div>
             </div> 
         </section>
-        <section class="pl-[158px] pb-[211px]">
-            <p class="hero-title pb-[144px]">Схема музея</p>
-            <div class="relative flex gap-[48px]">
-                <img src="image/Group 387.png">
-                <div class="section-list max-w-[356px] flex flex-col">
-                    <ol class="flex flex-col gap-[8px]">
-                        <li><b>I раздел.</b> Великая Отечественная война</li>
-                        <li><b>II раздел.</b> Обыкновенный нацизм</li>
-                        <li><b>III раздел.</b> Трагедия в Зугрэс</li>
-                        <li><b>IV раздел.</b> Батальон “Азов”</li>
-                        <li><b>V раздел.</b> Снабжение Украины НАТО</li>
-                        <li><b>VI раздел.</b> Герои-Саратовцы</li>
-                        <li><b>VII раздел.</b> Гуманитарная помощь</li>
-                    </ol>
-                <img src="image/Vector 17.png" class="absolute bottom-[3px] right-[148px]">
+        <section class="hidden l:flex flex-col items-center pl-[18px] pb-[110px] xxl:pb-[211px]">
+            <div>
+                <p class="hero-title l:pb-[80px] xl:pb-[110px] xxl:pb-[144px] l:text-[88px]">Схема музея</p>
+                <div class="relative flex l:gap-[48px] xxl:gap-[48px]">
+                    <img src="image/Group 387.png" alt="#" class="l:max-w-[700px] xl:max-w-[900px] xxl:max-w-[1204px]">
+                    <div class="section-list font-[DinproRegular] l:text-[15px] xl:text-[20px] max-w-[356px] flex flex-col">
+                        <ol class="flex flex-col gap-[8px]">
+                            <li><b>I раздел.</b> Великая Отечественная война</li>
+                            <li><b>II раздел.</b> Обыкновенный нацизм</li>
+                            <li><b>III раздел.</b> Трагедия в Зугрэс</li>
+                            <li><b>IV раздел.</b> Батальон “Азов”</li>
+                            <li><b>V раздел.</b> Снабжение Украины НАТО</li>
+                            <li><b>VI раздел.</b> Герои-Саратовцы</li>
+                            <li><b>VII раздел.</b> Гуманитарная помощь</li>
+                        </ol>
+                    <img src="image/Vector 17.png" class="absolute l:w-[416px] l:bottom-[-10px] l:right-[-16px] xl:w-[490px] xl:right-[-4px] xl:bottom-[-38px] xxl:bottom-[3px] xxl:right-[-44px] xxl:w-[600px]">
+                    </div>
                 </div>
             </div>
         </section>
         <section>
-            <p class="galary-text hero-title pl-[162px] flex items-end pb-[94px]">Контакты</p>
-            <div class="map w-[100%] min-h-[295px] pb-[75px]">
+            <p class="flex items-end pb-[38px] pl-[18px] hero-title l:text-[88px] l:pl-[162px] l:pb-[94px]">Контакты</p>
+            <div class="map xs:pr-[141px] xs:pl-[17px] pb-[32px] l:min-h-[295px] l:pl-0 l:pr-0 l:pb-[75px]">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa193311aebb3932423d49ee9aade7e7f4ec775c6a79642d9b21928e668d5751f&amp;width=100%25&amp;height=295&amp;lang=ru_RU&amp;scroll=false"></script>
             </div>
         </section>
-        <footer class="flex flex-row gap-[79px] hero-text pb-[170px] justify-center">
-            <div class="flex flex-col gap-[47px]">
+        <footer class="flex flex-col gap-[24px] pl-[18px] l:flex-row l:gap-[79px] hero-text pb-[104px] xl:pb-[120px] xxl:pb-[170px] justify-center">
+            <div class="flex flex-col gap-[24px] l:gap-[47px]">
                 <div class="footer-text">
                     <img src="image/phone.svg" class="footer-icon">
                     <a href="#" class="footer-link">+7 (8452) 24-20-00</a>
@@ -522,7 +663,7 @@
             </div>
             <div class="footer-text gap-[10px]">
                 <img src="image/time.svg" class="footer-icon">
-                <p class="max-w-[415px]">понедельник – выходной вторник – пятница: 10:00 – 18:00 суббота: 10:00 – 19:00 воскресенье: 11:00 – 20:00 Последний вторник месяца – санитарный день</p>
+                <p class="s:max-w-[300px] l:max-w-[205px] xl:max-w-[300px] xxl:max-w-[415px]">понедельник – выходной вторник – пятница: 10:00 – 18:00 суббота: 10:00 – 19:00 воскресенье: 11:00 – 20:00 Последний вторник месяца – санитарный день</p>
             </div>
         </footer>
     </main>
@@ -531,6 +672,5 @@
         Fancybox.bind('[data-fancybox="gallery"]',{
         });
     </script>
-
 </body>
 </html>
