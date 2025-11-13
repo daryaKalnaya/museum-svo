@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <title>Выставки</title>
+</head>
+<body>
+    <header class="fixed top-0 left-0 bg-white w-[100%] z-3">
+        <div class="ran-line bg-darkBei text-white flex justify-between items-center font-[DinproMedium] text-[18px] h-[40px] pl-[23px] pr-[23px] l:pl-[162px] l:pr-[162px]">
+            <span>Выставки</span>
+            <span>Выставки</span>
+        </div>
+        <div class="nav-mobile h-[102px] flex items-center justify-between z-9 pl-[23px] pr-[30px] m:pl-[50px] m:pr-[50px] l:hidden">
+            <a href="index.html">
+                <img src="image/logo-mobile.svg" class="w-[120px] xs:w-[140px]" alt="">
+            </a>
+            <div class="burger-wrapper">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label class="burger" for="burger-checkbox"></label>
+                <ul class="menu-list overflow-auto">
+                    <li class="menu-item nav-link">
+                        <details class="details" name="details">
+                            <summary class="details-title cursor-pointer">
+                                <img src="image/Vector 13.png" alt="" class="w-4 h-[9px]">
+                                <span href="#">Посетителям</span>
+                            </summary>
+                            <div class="details-content">
+                                <a href="#" class="links_nav">Афиша</a>
+                                <a href="#" class="links_nav">События</a>
+                                <a href="#" class="links_nav">Новости</a>
+                                <a href="#" class="links_nav">Вопрос-ответ</a>
+                                <a href="#" class="links_nav">Доступность</a>
+                                <a href="#" class="links_nav">Услуги</a>
+                                <a href="#" class="links_nav">Космический квиз</a>
+                                <a href="#" class="links_nav">Военно-патриотический квиз</a>
+                                <a href="#" class="links_nav">Писмо солдату СВО</a>
+                                <a href="#" class="links_nav">Экскурсия по экспозиции Музея истории СВО</a>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="menu-item nav-link">
+                        <details class="details" name="details">
+                            <summary class="details-title cursor-pointer">
+                                <img src="image/Vector 13.png" alt="" class="w-4 h-[9px]">
+                                <span href="#">Учителям</span>
+                            </summary>
+                            <div class="details-content">
+                                <a href="#" class="links_nav">Важность изучения СВО в школах</a>
+                                <a href="#" class="links_nav">Методические рекомендации</a>
+                                <a href="#" class="links_nav">Книга памяти</a>
+                                <a href="#" class="links_nav">Земляки-герои РФ</a>
+                                <a href="#" class="links_nav">Документальные фильмы</a>
+                                <a href="#" class="links_nav">Письмо солдату СВО</a>
+                                <a href="#" class="links_nav">Информация о музее истории СВО</a>
+                                <a href="#" class="links_nav">Галерея</a>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="menu-item nav-link">
+                        <details class="details" name="details">
+                            <summary class="details-title cursor-pointer">
+                                <img src="image/Vector 13.png" alt="" class="w-4 h-[9px]">
+                                <span href="#">О нас</span>
+                            </summary>
+                            <div class="details-content">
+                                <a href="#" class="links_nav">Юридическая информация</a>
+                                <a href="#" class="links_nav">О нас в СМИ</a>
+                                <a href="#" class="links_nav">Отзывы</a>
+                                <a href="#" class="links_nav">Партнеры музея истории СВО</a>
+                                <a href="#" class="links_nav">Проекты</a>
+                                <a href="#" class="links_nav">Пресс-служба</a>
+                                <a href="#" class="links_nav">Вакансии</a>
+                                <a href="#" class="links_nav">Филиалы</a>
+                                <a href="#" class="links_nav">Контакты</a>
+                                <a href="#" class="links_nav">Написать руководителю музея</a>
+                                <a href="#" class="links_nav">Музей истории СВО в 360&ordm;</a>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="menu-item nav-link">
+                        <a href="">Экскурсии</a>
+                    </li>
+                    <li class="menu-item nav-link current-menu-item">
+                        <a href="#">Выставки</a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div class="header-container hidden items-center  l:flex l:justify-evenly xl:gap-[90px] xxl:justify-center xxl:gap-[293px] pt-[17px] pb-[17px]">
+            <div class="header-logo flex items-center gap-[15px] xl:gap-[20px]">
+                <a href="index.html" class="w-[115px] xxl:w-[140px]">
+                    <img src="image/logo-mobile.svg" alt="#" class="">
+                </a>
+                <img src="image/Vector 26.svg">
+                <a href="index.html" class="w-[110px] xxl:w-[140px]">
+                    <img src="image/logo2.png" alt="#" class="">
+                </a>
+            </div>
+            <ul class="nav flex font-[DinproMedium] text-[#1C1B17] l:gap-[30px] l:text-[15px] xl:gap-[50px] xl:text-[18px] xxl:text-[20px] xxl:gap-[107px]">
+                <li class="nav-link current-menu-item">
+                    <a href="#">Выставки</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Экскурсии</a>
+                </li>
+                <li class="relative group">
+                    <div class="nav-link flex relative">
+                        <a href="#">Посетителям</a>
+                        <a href="#" class="vector l:pt-[8px] xl:pt-[10px] xxl:pt-[11px] pl-[8px]">
+                            <img src="image/Vector 13.png" class="l:w-4 xxl:min-w-[19px]">
+                        </a>
+                    </div>
+                    <div class="z-0 nav-drop l:left-[-20px] xxl:left-[-34px]">
+                        <a href="#" class="link-nav link-size">Афиша</a>
+                        <a href="#" class="link-nav link-size">События</a>
+                        <a href="#" class="link-nav link-size">Новости</a>
+                        <a href="#" class="link-nav link-size">Вопрос-ответ</a>
+                        <a href="#" class="link-nav link-size">Доступность</a>
+                        <a href="#" class="link-nav link-size">Услуги</a>
+                        <a href="#" class="link-nav link-size">Космический квиз</a>
+                        <a href="#" class="link-nav link-size">Военно-патриотический квиз</a>
+                        <a href="#" class="link-nav link-size">Писмо солдату СВО</a>
+                        <a href="#" class="link-nav link-size">Экскурсия по экспозиции Музея истории СВО</a>
+                    </div>
+                </li>
+                <li class="relative group">
+                    <div class="nav-link flex relative">
+                        <a href="#">Учителям</a>
+                        <a href="#" class="vector l:pt-[8px] xl:pt-[10px] xxl:pt-[11px] pl-[8px]">
+                            <img src="image/Vector 13.png" class="l:w-4 xxl:min-w-[19px]">
+                        </a>
+                    </div>
+                    <div class="z-0 nav-drop l:left-[-27px] xxl:left-[-34px]">
+                        <a href="#" class="link-nav link-size">Важность изучения СВО в школах</a>
+                        <a href="#" class="link-nav link-size">Методические рекомендации</a>
+                        <a href="#" class="link-nav link-size">Книга памяти</a>
+                        <a href="#" class="link-nav link-size">Земляки-герои РФ</a>
+                        <a href="#" class="link-nav link-size">Документальные фильмы</a>
+                        <a href="#" class="link-nav link-size">Письмо солдату СВО</a>
+                        <a href="#" class="link-nav link-size">Информация о музее истории СВО</a>
+                        <a href="#" class="link-nav link-size">Галерея</a>
+                    </div>
+                </li>
+                <li class="relative group">
+                    <div class="flex relative">
+                        <a href="#">О нас</a>
+                        <a href="#" class="vector l:pt-[8px] xl:pt-[10px] xxl:pt-[11px] pl-[8px]">
+                            <img src="image/Vector 13.png" class="l:w-4  xxl:min-w-[19px]">
+                        </a>
+                    </div>
+                    <div class="z-0 nav-drop l:left-[-100px] xl:left-[-75px] xxl:left-[-104px]">
+                        <a href="#" class="link-nav link-size-last">Юридическая информация</a>
+                        <a href="#" class="link-nav link-size-last">О нас в СМИ</a>
+                        <a href="#" class="link-nav link-size-last">Отзывы</a>
+                        <a href="#" class="link-nav link-size-last">Партнеры музея истории СВО</a>
+                        <a href="#" class="link-nav link-size-last">Проекты</a>
+                        <a href="#" class="link-nav link-size-last">Пресс-служба</a>
+                        <a href="#" class="link-nav link-size-last">Вакансии</a>
+                        <a href="#" class="link-nav link-size-last">Филиалы</a>
+                        <a href="#" class="link-nav link-size-last">Контакты</a>
+                        <a href="#" class="link-nav link-size-last">Написать руководителю музея</a>
+                        <a href="#" class="link-nav link-size-last">Музей истории СВО в 360&ordm;</a>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+    </header>
+    <main>
+        <section class="flex flex-col items-center">
+            <img src="image/img-w-full.png" class="hidden l:block object-fill w-full pt-[180px]">
+            <div class="flex flex-row justify-center pr-[18px] gap-[10px] xs:gap-[35px] pl-[17px] m:pr-0 m:pl-0 pt-[160px] l:pt-[65px] l:gap-0 xl:gap-[50px] xxl:pl-[162px] xxl:pr-[148px] xxl:pt-[100px]">
+                <div class="l:flex l:flex-row l:w-full xl:w-[1260px] xxl:w-[1600px] l:justify-evenly xxl:justify-between gap-[50px] l:gap-[60px] xxl:gap-[40px]">
+                    <div class="flex flex-col l:gap-[30px] xxl:gap-[22px]">
+                        <p class="hero-title">Выставки</p>
+                        <div class="line-grad hidden l:flex l:w-[356px] l:h-[32px] xxl:w-[626px] xxl:h-[60px]"></div>
+                    </div>
+                    <div class="container_top-text max-w-[302px] m:max-w-[560px] l:max-w-[440px] xl:max-w-[650px] xxl:max-w-[950px] pt-[20px]">
+                        <p class="hero-text">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.
+                        <p class="hero-text">Задача — сохранить память о саратовцах-участниках СВО.</p>
+                        <p class="hero-text">Музей является филиалом саратовского Исторического парка «Россия — Моя история».</p>
+                    </div>
+                </div>
+                <div class="line-grad-xs flex l:hidden"></div>
+            </div>
+            <div class="relative grid grid-cols-1 m:grid-cols-2 l:grid-cols-3 gap-8 pb-[46px] l:pb-[76px] max-w-[290px] xs:max-w-[406px] m:max-w-[655px] l:max-w-[856px] l:pt-[100px] xl:max-w-[1186px] xxl:max-w-[1985px] xxl:gap-20">
+                <a href="exhibition_detailed.html" class="excursion">
+                    <img src="image/img3.png" class="img-ex">
+                    <div class="text-ex">
+                        <p class="excursion-title">Экскурсия 1</p>
+                        <p class="excursion-text">с 9.00 до 9.00</p>
+                        <p class="excursion-text">1 января — 1 января</p>
+                    </div>
+                </a>
+                <a href="exhibition_detailed.html" class="excursion">
+                    <img src="image/img3.png" class="img-ex">
+                    <div class="text-ex">
+                        <p class="excursion-title">Экскурсия 1</p>
+                        <p class="excursion-text">с 9.00 до 9.00</p>
+                        <p class="excursion-text">1 января — 1 января</p>
+                    </div>
+                </a>
+                <a href="exhibition_detailed.html" class="excursion">
+                    <img src="image/img3.png" class="img-ex">
+                    <div class="text-ex">
+                        <p class="excursion-title">Экскурсия 1</p>
+                        <p class="excursion-text">с 9.00 до 9.00</p>
+                        <p class="excursion-text">1 января — 1 января</p>
+                    </div>
+                </a>
+                <a href="exhibition_detailed.html" class="excursion">
+                    <img src="image/img3.png" class="img-ex">
+                    <div class="text-ex">
+                        <p class="excursion-title">Экскурсия 1</p>
+                        <p class="excursion-text">с 9.00 до 9.00</p>
+                        <p class="excursion-text">1 января — 1 января</p>
+                    </div>
+                </a>
+                <a href="exhibition_detailed.html" class="excursion">
+                    <img src="image/img3.png" class="img-ex">
+                    <div class="text-ex">
+                        <p class="excursion-title">Экскурсия 1</p>
+                        <p class="excursion-text">с 9.00 до 9.00</p>
+                        <p class="excursion-text">1 января — 1 января</p>
+                    </div>
+                </a>
+                <a href="exhibition_detailed.html" class="excursion">
+                    <img src="image/img3.png" class="img-ex">
+                    <div class="text-ex">
+                        <p class="excursion-title">Экскурсия 1</p>
+                        <p class="excursion-text">с 9.00 до 9.00</p>
+                        <p class="excursion-text">1 января — 1 января</p>
+                    </div>
+                </a>
+                <img src="image/Group 191.png" class="hidden l:block absolute l:w-[415px] xl:w-[476px] left-[-128px] bottom-[-86px] xl:bottom-[-74px] xxl:left-[-174px] xxl:bottom-[-137px] xxl:w-[738px]">
+                <img src="image/Group 191.png" class="hidden l:block absolute l:w-[415px] xl:w-[476px] bottom-[-86px] right-[-128px] scale-x-[-100%] xl:bottom-[-74px] xxl:right-[-174px] xxl:bottom-[-137px] xxl:w-[738px]">
+            </div>
+            <div class="pb-[73px] xxl:pb-[95px]">
+                <button class="button_1">смотреть все</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

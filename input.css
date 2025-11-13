@@ -41,12 +41,6 @@
     --my-transform: translateX(162px) translateY(375px);
 
 }
-/* Поменять _ на -, 
-брейк поинт,
-если бг, где должно предполагаться смена картинки, надо бг задавать в style
-сделать alt
-*/
-
 .burger-checkbox {
   position: absolute;
   visibility: hidden;
@@ -152,12 +146,11 @@
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 .nav-link::before{
+    @apply w-[85px] h-[5px] xxl:w-[98px] xxl:h-[7px];
     content: "";
     display: block;
     position: absolute;
     background: linear-gradient(90deg, #DDD8AF 0%, #ffffff 100%);
-    width: 119px;
-    height: 7px;
     transform: translateY(34px);
     opacity: 0%;
     visibility: hidden;
@@ -165,6 +158,10 @@
     z-index: 1;
 }
 .nav-link:hover::before, .nav-link:focus::before{
+    opacity: 100%;
+    visibility: visible;
+}
+.current-menu-item::before{
     opacity: 100%;
     visibility: visible;
 }
@@ -234,7 +231,7 @@
     @apply flex flex-col max-w-[285px] xs:max-w-[403px] m:max-w-[504px] l:max-w-[900px] gap-[33px] pb-[43px] xl:justify-between l:flex-row xl:gap-[30px] xl:max-w-[1230px] xxl:max-w-[1599px] xxl:gap-[85px] xxl:pb-[94px]
 }
 .excursion{
-    @apply h-[260px] l:h-[315px] xl:h-[430px] xl:max-w-[440px] xxl:min-w-[476px];
+    @apply h-[260px] l:h-[315px] xl:h-[395px] xl:max-w-[440px]  xxl:h-[430px] xxl:min-w-[476px];
     background-color: rgba(240, 238, 225, 1);
     box-shadow: 8px 8px 17.5px 0px rgba(126, 116, 81, 0.52);
     display: flex;
@@ -251,7 +248,7 @@
     background: linear-gradient(90deg, #DDD8AF 0%, #ffffff 100%);
 }
 .line-grad-xs::before{
-    @apply w-[45px] xs:w-[58px] h-[227px] m:h-[220px];
+    @apply w-[45px] xs:w-[58px] h-[227px] m:h-[190px];
     content:"";
     background: linear-gradient(180deg, #DDD8AF 0%, #ffffff 100%);
 }
@@ -301,8 +298,8 @@
 }
 .gradient-block-right{
     background: radial-gradient(50% 50% at 46% 41%, #2B2A29 0%, rgba(254, 253, 228, 0) 85%);
-    min-width: 303px;
-    min-height: 290px;
+    width: 100%;
+    height: 100%;
     position: absolute; 
     grid-area: 1/1; 
     top: -128px;
@@ -311,7 +308,8 @@
     backdrop-filter: blur(55.5px)
 }
 .gradient-mob-link{
-    @apply min-w-[140px] min-h-[200px] xs:min-w-[193px] xs:min-h-[286px] m:min-w-[255px] m:min-h-[320px];
+    width: 100%;
+    height: 100%;
     background: radial-gradient(37% 23% at 4% 97%, rgb(182 176 119) -8%, rgb(254 253 228 / 50%) 274%);
     backdrop-filter: blur(70.334942px);
     position: absolute; 
@@ -325,7 +323,7 @@
     grid-area: 1/1; 
 }
 .gradient-block3{
-    @apply z-1 min-w-[404px] min-h-[66px] xl:min-h-[90px] xl:min-w-[576px] xxl:min-w-[788px] xxl:min-h-[123px];
+    @apply z-1 w-full h-full;
     grid-area: 1/1; 
     background: radial-gradient(50% 50% at 50% -9%, #BCB679 0%, rgb(254 253 228 / 17%) 163%);
     backdrop-filter: blur(55.5px);
@@ -336,13 +334,13 @@
     background: radial-gradient(97% 87% at 1% 79%, #7E7451 0%, rgba(254, 253, 228, 0) 100%);
 }
 .gradient-blockM5{
-    @apply max-w-[158px] max-h-[91px];
+    @apply w-full h-full;
     grid-area: 1/1;
     background: radial-gradient(50% 50% at 101.77% 10.67%, #2B2A29 -20%, rgb(254 253 228 / 49%) 134%);
     backdrop-filter: blur(25.362747192382812px);
 }
 .gradient-blockM3{
-    @apply max-w-[403px] max-h-[193px];
+    @apply w-full h-full;
     grid-area: 1/1;
     background: radial-gradient(61% 61% at 42% 1%, #BCB679 -2%, rgb(254 253 228 / 42%) 100%);
     backdrop-filter: blur(28.440942764282227px);
