@@ -512,6 +512,26 @@
     grid-area: 1/1;
     backdrop-filter: blur(25.940217971801758px);
     background: radial-gradient(58% 71% at 99.04% -10.86%, #1C1B17 0%, rgb(244 244 234 / 47%) 142%);
+}
+.gradient-block7{
+    @apply w-[193px] h-[35px] xxl:w-[1592px] xxl:h-[38px];
+    background: linear-gradient(90deg, #DDD8AF 0%, #ffffff 100%);
+
+}
+.gradient-block8{
+    grid-area: 1/1;
+    background: radial-gradient(49% 48% at -1.6% 77.64%, #BCB679 0%, rgb(255 254 229 / 65%) 100%);
+    backdrop-filter: blur(1.5px);
+}
+.gradient-block9{
+    grid-area: 1/1;
+    background: radial-gradient(51% 142% at 7.4% 43.64%, #9E9A96 0%, rgb(255 255 255 / 36%) 100%);
+    backdrop-filter: blur(2.5px);
+}
+.gradient-block10{
+    grid-area: 1/1;
+    background: radial-gradient(52% 77% at 9.06% 43.64%, #807552 0%, rgb(254 253 228 / 56%) 100%);
+    backdrop-filter: blur(1.5px);
 
 }
 .footer-text{
@@ -528,6 +548,13 @@
 }
 .footer-link:hover{
     text-decoration:underline;
+}
+
+/*excursions_detailed*/
+.gradient_ex{
+    @apply xs:w-[626px] xs:h-[60px];
+    background: linear-gradient(90deg, #DDD8AF 0%, #F0EEE1 100%);
+
 }
 
 

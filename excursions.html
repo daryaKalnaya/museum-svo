@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="input.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css"/>
-    <title>Выставка</title>
+    <title>Экскурсии</title>
 </head>
 <body>
     <header class="fixed top-0 left-0 bg-white w-[100%] z-3">
@@ -13,7 +12,7 @@
             <span>Выставки</span>
             <span>Выставки</span>
         </div>
-        <div class="nav-mobile h-[102px] flex items-center justify-between z-10 pl-[23px] pr-[30px] m:pl-[50px] m:pr-[50px] l:hidden">
+        <div class="nav-mobile h-[102px] flex items-center justify-between z-9 pl-[23px] pr-[30px] m:pl-[50px] m:pr-[50px] l:hidden">
             <a href="index.html">
                 <img src="image/logo-mobile.svg" class="w-[120px] xs:w-[140px]" alt="">
             </a>
@@ -80,27 +79,27 @@
                             </div>
                         </details>
                     </li>
-                    <li class="menu-item nav-link">
-                        <a href="excursions.html">Экскурсии</a>
-                    </li>
                     <li class="menu-item nav-link current-menu-item">
+                        <a href="#">Экскурсии</a>
+                    </li>
+                    <li class="menu-item nav-link">
                         <a href="exhibition.html">Выставки</a>
                     </li>
                 </ul>
             </div> 
         </div>
-        <div class="header-container hidden items-center z-10 l:flex l:justify-evenly xl:gap-[90px] xxl:justify-center xxl:gap-[293px] pt-[17px] pb-[17px]">
+        <div class="header-container hidden items-center  l:flex l:justify-evenly xl:gap-[90px] xxl:justify-center xxl:gap-[520px] pt-[17px] pb-[17px]">
             <div class="header-logo flex items-center gap-[15px] xl:gap-[20px]">
                 <a href="index.html" class="w-[115px] xxl:w-[140px]">
                     <img src="image/logo-mobile.svg" alt="#" class="">
                 </a>
             </div>
             <ul class="nav flex font-[DinproMedium] text-[#1C1B17] l:gap-[30px] l:text-[15px] xl:gap-[50px] xl:text-[18px] xxl:text-[20px] xxl:gap-[107px]">
-                <li class="nav-link current-menu-item">
+                <li class="nav-link">
                     <a href="exhibition.html">Выставки</a>
                 </li>
-                <li class="nav-link">
-                    <a href="excursions.html">Экскурсии</a>
+                <li class="nav-link current-menu-item">
+                    <a href="#">Экскурсии</a>
                 </li>
                 <li class="relative group">
                     <div class="nav-link flex relative">
@@ -164,14 +163,14 @@
             </ul>
         </div> 
     </header>
-    <main class="min-w-[320px] overflow-hidden">
-        <section class="flex flex-col items-center pb-[53px] xxl:pb-[40px]">
+    <main>
+        <section class="flex flex-col items-center">
             <img src="image/img-w-full.png" class="hidden l:block object-fill w-full pt-[180px]">
-            <div class="flex flex-row justify-center pr-[18px] gap-[10px] xs:gap-[35px] pl-[17px] m:pr-0 m:pl-0 pt-[160px] l:pt-[65px] l:gap-0 l:pb-[50px] xl:gap-[50px] xl:pb-[88px] xxl:pt-[100px]">
+            <div class="flex flex-row justify-center pr-[18px] gap-[7px] m:gap-[35px] pl-[17px] m:pr-0 m:pl-0 pt-[160px] l:pt-[65px] l:gap-0 xl:gap-[50px] xxl:pl-[162px] xxl:pr-[148px] xxl:pt-[100px]">
                 <div class="l:flex l:flex-row l:w-full xl:w-[1260px] xxl:w-[1600px] l:justify-evenly xxl:justify-between gap-[50px] l:gap-[60px] xxl:gap-[40px]">
-                    <div class="flex flex-col l:gap-[30px] xxl:gap-[22px]">
-                        <p class="hero-title">Выставки</p>
-                        <div class="line-grad hidden l:flex l:w-[356px] l:h-[32px] xxl:w-[626px] xxl:h-[60px]"></div>
+                    <div class="">
+                        <p class="hero-title">Экрсурсии</p>
+                        <img src="image/Vector 17.png" class="rotate-180 hidden l:block w-[314px] l:w-[400px] xl:w-[600px]">
                     </div>
                     <div class="container_top-text max-w-[302px] m:max-w-[560px] l:max-w-[440px] xl:max-w-[650px] xxl:max-w-[950px] pt-[20px]">
                         <p class="hero-text">Музей истории специальной военной операции открылся в Саратове 28 июля 2023 года.
@@ -181,61 +180,62 @@
                 </div>
                 <div class="line-grad-xs flex l:hidden"></div>
             </div>
-
-            <div class="relative flex flex-col l:flex-row gap-[10px] xs:gap-5">
-                <div class="flex flex-row-reverse  l:flex-col gap-[10px] xs:gap-5">
-                    <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box max-h-[290px] max-w-[142px] xs:max-w-[193px] m:max-w-[315px] l:max-w-[416px] l:max-h-[180px] xl:max-h-[201px] xl:max-w-[585px] xxl:max-w-[788px] xxl:max-h-[310px]">
-                        <img src="image/img7.png" alt="" class="gallery-img">
-                    </a>
-                    <div class="flex relative flex-col l:flex-row gap-[10px] xs:gap-[20px] max-w-[142px] max-h-[290px] m:max-w-[315px] xs:max-w-[193px] l:max-w-[416px] l:max-h-[180px] xl:max-w-[585px] xl:max-h-[201px] xxl:max-w-[788px] xxl:max-h-[326px] xxl:gap-[24px]">
-                        <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box" >
-                            <img src="image/img7.png" alt="" class="gallery-img">
-                        </a>
-                        <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box">
-                            <img src="image/img7.png" alt="" class="gallery-img">    
-                        </a>
-                        <img src="image/Group 190.png" class="absolute w-[67px] rotate-270 l:rotate-0 bottom-[-204px] xs:bottom-[-213px] m:bottom-[-301px] left-[-16px] l:top-[-226px] l:left-[-38px] xl:left-[-83px] xl:w-[146px] xl:top-[-276px] xxl:top-[-387px]">
-                        <img src="image/Group 188.png" class="absolute rotate-270 w-[36px] bottom-[-24px] xs:bottom-[-35px] right-[-75px] m:right-[-89px] l:right-[181px] l:top-[-43px] xl:top-[-96px] xl:w-[79px] xl:right-[244px] xxl:right-[343px]">
-                        <img src="image/Group 192.png" class="absolute -scale-y-100 w-[43px] right-[-15px] xs:right-[-25px] l:top-[-198px] xl:top-[-221px] xl:right-[-30px] xl:w-[93px] xxl:top-[-330px]">
-                        <img src="image/Group 192.png" class="absolute -scale-y-100 w-[30px] bottom-[31px] xs:bottom-[64px] m:bottom-[72px] left-[-26px] l:hidden">
-                        <img src="image/Group 188.png" class="absolute hidden w-[36px] l:block rotate-90 l:bottom-[-43px] xl:bottom-[-96px] xl:w-[79px] l:right-[-41px] z-2">
+            <div class="relative grid grid-cols-1 m:grid-cols-2 l:grid-cols-3 gap-8 pb-[46px] l:pb-[76px] max-w-[290px] xs:max-w-[406px] m:max-w-[655px] l:max-w-[856px] l:pt-[100px] xl:max-w-[1186px] xxl:max-w-[1985px] xxl:gap-20">
+                <a href="excursions_detailed.html" class="excursion">
+                    <img src="image/img3.png" class="img-ex">
+                    <div class="text-ex">
+                        <p class="excursion-title">Экскурсия 1</p>
+                        <p class="excursion-text">с 9.00 до 9.00</p>
+                        <p class="excursion-text">1 января — 1 января</p>
                     </div>
-                </div>
-                <a href="image/img7.png" data-fancybox="gallery" class="gallery-img-box max-h-[144px] max-w-[294px] xs:max-w-[406px] m:max-w-[652px] m:max-h-[231px] l:max-w-[418px] l:max-h-[428px] xl:max-h-[506px] xl:max-w-[585px] xxl:max-w-[788px] xxl:max-h-[658px]">
-                    <img src="image/img7.png" alt="" class="gallery-img">
                 </a>
-                <img src="image/Group 189.png" class="absolute hidden w-[67px] right-[-23px] bottom-[-25px] l:block xl:right-[-38px] xl:bottom-[-41px] xl:w-[108px]">
+                <a href="excursions_detailed.html" class="excursion">
+                    <img src="image/img3.png" class="img-ex">
+                    <div class="text-ex">
+                        <p class="excursion-title">Экскурсия 1</p>
+                        <p class="excursion-text">с 9.00 до 9.00</p>
+                        <p class="excursion-text">1 января — 1 января</p>
+                    </div>
+                </a>
+                <a href="excursions_detailed.html" class="excursion">
+                    <img src="image/img3.png" class="img-ex">
+                    <div class="text-ex">
+                        <p class="excursion-title">Экскурсия 1</p>
+                        <p class="excursion-text">с 9.00 до 9.00</p>
+                        <p class="excursion-text">1 января — 1 января</p>
+                    </div>
+                </a>
+                <a href="excursions_detailed.html" class="excursion">
+                    <img src="image/img3.png" class="img-ex">
+                    <div class="text-ex">
+                        <p class="excursion-title">Экскурсия 1</p>
+                        <p class="excursion-text">с 9.00 до 9.00</p>
+                        <p class="excursion-text">1 января — 1 января</p>
+                    </div>
+                </a>
+                <a href="excursions_detailed.html" class="excursion">
+                    <img src="image/img3.png" class="img-ex">
+                    <div class="text-ex">
+                        <p class="excursion-title">Экскурсия 1</p>
+                        <p class="excursion-text">с 9.00 до 9.00</p>
+                        <p class="excursion-text">1 января — 1 января</p>
+                    </div>
+                </a>
+                <a href="excursions_detailed.html" class="excursion">
+                    <img src="image/img3.png" class="img-ex">
+                    <div class="text-ex">
+                        <p class="excursion-title">Экскурсия 1</p>
+                        <p class="excursion-text">с 9.00 до 9.00</p>
+                        <p class="excursion-text">1 января — 1 января</p>
+                    </div>
+                </a>
+                <img src="image/Group 191.png" class="hidden l:block absolute l:w-[415px] xl:w-[476px] left-[-128px] bottom-[-86px] xl:bottom-[-74px] xxl:left-[-174px] xxl:bottom-[-137px] xxl:w-[738px]">
+                <img src="image/Group 191.png" class="hidden l:block absolute l:w-[415px] xl:w-[476px] bottom-[-86px] right-[-128px] scale-x-[-100%] xl:bottom-[-74px] xxl:right-[-174px] xxl:bottom-[-137px] xxl:w-[738px]">
             </div>
-
-        </section>
-        <section class="flex flex-row justify-center l:gap-[164px] xl:gap-[264px] xxl:gap-[334px] pb-[60px] xxl:pb-[155px]">
-            <div class="flex flex-col hero-text gap-[20px] xxl:gap-[58px]">
-                <p class="font-black">Адрес и часы работы</p>
-                <div class="flex flex-col gap-[23px] xxl:gap-[46px]">
-                    <div class="footer-text">
-                        <img src="image/map.svg" class="footer-icon">
-                        <p href="#">г. Саратов, ул. Московская, 94</p>
-                    </div>
-                    <div class="footer-text">
-                        <img src="image/phone.svg" class="footer-icon">
-                        <a href="#" class="footer-link">+7 (8452) 24-20-00</a>
-                    </div>
-                    <div class="footer-text items-start gap-[10px]">
-                        <img src="image/time.svg" class="footer-icon">
-                        <p class=" max-w-[220px] s:max-w-[300px] l:max-w-[230px] xl:max-w-[300px] xxl:max-w-[415px]">понедельник – выходной вторник – пятница: 10:00 – 18:00 суббота: 10:00 – 19:00 воскресенье: 11:00 – 20:00 Последний вторник месяца – санитарный день</p>
-                    </div>
-                </div>
-            </div>
-            <div class="hidden l:block relative ">
-                <img src="image/img7.png" alt="" class="object-cover max-w-[418px] xl:max-w-[586px] xxl:max-w-[790px]">
-                <img src="image/Group 188.png" class="absolute rotate-90 w-[36px] bottom-[-44px] xl:bottom-[-92px] l:right-[376px] xl:w-[76px] xl:right-[546px] xxl:right-[676px] z-5">
+            <div class="pb-[73px] xxl:pb-[95px]">
+                <button class="button_1">смотреть все</button>
             </div>
         </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
-    <script>
-        Fancybox.bind('[data-fancybox="gallery"]',{
-        });
-    </script>
 </body>
 </html>
