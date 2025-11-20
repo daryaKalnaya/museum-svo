@@ -283,12 +283,20 @@
 .block-image{
     grid-area: 1/1;
 }
-
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
 .link-block-title{
     @apply font-[Conthrax] text-[15px] xs:text-[24px] l:text-[32px] xl:text-[45px] xxl:text-[58px]
 }
 .link-block-text{
     @apply font-[DinproRegular] text-[7px] xs:text-[10px] xl:text-[12px] xxl:text-[18px]
+}
+.content-blocks {
+    grid-area: 1 / 1;
+    z-index: 1;
 }
 .gradient-block-left{
     background: radial-gradient(50% 120% at 4% 121%, #BCB679 0%, rgba(254, 253, 228, 0) 100%);
@@ -350,6 +358,18 @@
     grid-area: 1/1;
     background: radial-gradient(50% 50% at 6% 80%, #7E7451 0%, rgb(252 253 231 / 45%) 100%);
     backdrop-filter: blur(25.536815643310547px);
+}
+.block_gradient1{
+    @apply w-[230px] h-[117px] l:w-[350px] l:h-[180px] xxl:w-[465px] xxl:h-[237px];
+    background: radial-gradient(50% 69% at -6.42% 77.71%, #BCB679 0%, rgba(240, 238, 225, 1) 139%);
+}
+.block_gradient2{
+    @apply w-[230px] h-[117px] l:w-[350px] l:h-[180px] xxl:w-[465px] xxl:h-[237px];
+    background: radial-gradient(55% 84% at 98.58% 5.71%, #807552 0%, rgba(240, 238, 225, 1) 147%);
+}
+.block_gradient3{
+    @apply w-[230px] h-[117px] l:w-[350px] l:h-[180px] xxl:w-[465px] xxl:h-[237px];
+    background: radial-gradient(50% 97% at 52.58% 105.71%, #807552 0%, rgba(240, 238, 225, 1) 111%);
 }
 .text_block{
     transform: translateY(-21px);
@@ -554,7 +574,9 @@
 .gradient_ex{
     @apply xs:w-[626px] xs:h-[60px];
     background: linear-gradient(90deg, #DDD8AF 0%, #F0EEE1 100%);
-
+}
+.block5{
+    grid-area:1/1;
 }
 
 
