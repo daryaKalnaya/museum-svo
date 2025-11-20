@@ -514,7 +514,7 @@
     background: radial-gradient(58% 71% at 99.04% -10.86%, #1C1B17 0%, rgb(244 244 234 / 47%) 142%);
 }
 .gradient-block7{
-    @apply w-[193px] h-[35px] xxl:w-[1592px] xxl:h-[38px];
+    @apply w-[90px] h-[29px] xs:w-[193px] xs:h-[35px] xl:w-[1233px] xxl:w-[1592px] xxl:h-[38px];
     background: linear-gradient(90deg, #DDD8AF 0%, #ffffff 100%);
 
 }
